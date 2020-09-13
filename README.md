@@ -4,11 +4,10 @@
  * @Author: Magic
  * @Date: 2020-09-14 07:01:26
  * @LastEditors: Magic
- * @LastEditTime: 2020-09-14 07:05:18
+ * @LastEditTime: 2020-09-14 07:08:16
 -->
 # yyn-demo
 项目说明：
-本项目纯属个人练手😂
-基于react库构建的前端旅游展示网站（原网站地址：https://www.ybsjyyn.com/）
+本项目纯属个人练手😂，基于react库构建的前端旅游展示网站（原网站地址：https://www.ybsjyyn.com/）
 
 
