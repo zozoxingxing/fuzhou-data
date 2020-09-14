@@ -4,7 +4,7 @@
  * @Author: Magic
  * @Date: 2020-09-13 22:45:14
  * @LastEditors: Magic
- * @LastEditTime: 2020-09-13 23:17:18
+ * @LastEditTime: 2020-09-14 07:24:17
  */
 import React, { Component } from 'react'
 
@@ -29,8 +29,7 @@ export default class strategy extends Component {
                             深化产业联动，反哺旅游生态发展。`,
                     bgUrl: require('../../assets/images/yyn-s2.png')
                 }
-            ],
-            textStyle: 'hide'
+            ]
         }
     }
 
@@ -45,7 +44,7 @@ export default class strategy extends Component {
             return (<li key={index} style={divStyle}>
                 <div className="item-block">
                     <h3>{item.title}</h3>
-                    <p dangerouslySetInnerHTML={{ __html: item.content }} className={this.state.textStyle}></p>
+                    <p dangerouslySetInnerHTML={{ __html: item.content }}></p>
                 </div>
             </li >)
         })

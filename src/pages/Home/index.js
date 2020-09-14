@@ -4,7 +4,7 @@
  * @Author: Magic
  * @Date: 2020-09-13 17:50:51
  * @LastEditors: Magic
- * @LastEditTime: 2020-09-13 23:34:11
+ * @LastEditTime: 2020-09-14 07:41:21
  */
 import React, { Component } from 'react'
 
@@ -13,6 +13,10 @@ import './index.scss'
 import Header from '../../components/header'
 import Platform from '../../components/platform'
 import Strategy from '../../components/strategy'
+import Experience from '../../components/experience'
+import Merchant from '../../components/merchant'
+import Tengyun from '../../components/tengyun'
+import Footer from '../../components/footer'
 
 export default class home extends Component {
     render() {
@@ -36,6 +40,10 @@ export default class home extends Component {
                 </div>
                 <Platform />
                 <Strategy />
+                <Experience />
+                <Merchant />
+                <Tengyun />
+                <Footer />
             </div>
         )
     }
