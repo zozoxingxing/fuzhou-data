@@ -4,7 +4,7 @@
  * @Author: Magic
  * @Date: 2020-09-14 07:23:39
  * @LastEditors: Magic
- * @LastEditTime: 2020-09-14 22:48:02
+ * @LastEditTime: 2020-09-15 07:12:00
  */
 import React, { Component } from 'react'
 
@@ -52,23 +52,23 @@ export default class experience extends Component {
 
     render() {
         const listItem = this.state.downloadList.map((item, index) => {
-            return (<li>
-                <div class="item-block">
+            return (<li key={index}>
+                <div className="item-block">
                     <h3>{item.title}</h3>
                     <img className="item-icon" src={item.icon} alt="图标" />
-                    <div class="item-code">
+                    <div className="item-code">
                         <img src={item.code[0]} alt="二维码" />
                     </div>
                 </div>
-                <div class="item-download">
+                <div className="item-download">
                     <h2>{item.desc}</h2>
                     <p>{item.from}</p>
                 </div>
             </li>)
         })
         return (
-            <div className="yyn-experience">
-                <div class="experience-title">
+            <div className="yyn-experience" id="experience">
+                <div className="experience-title">
                     <h1>产品体验</h1>
                     <p>多渠道体验，一部手机游云南</p>
                 </div>

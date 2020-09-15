@@ -7,8 +7,13 @@
             text-align: right;
             cursor: pointer;
             font-size: .16rem;
+            a{
+                color: $three;
+            }
             &.active{
-                color: $tn;
+                a{
+                    color: $tn;
+                }
             }
         }
     }

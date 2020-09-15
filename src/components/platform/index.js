@@ -4,7 +4,7 @@
  * @Author: Magic
  * @Date: 2020-09-13 21:46:50
  * @LastEditors: Magic
- * @LastEditTime: 2020-09-13 22:20:22
+ * @LastEditTime: 2020-09-15 07:20:46
  */
 import React, { Component } from 'react'
 
@@ -50,9 +50,8 @@ export default class platform extends Component {
                 </dl>
             </li>)
         })
-        console.log(listItem)
         return (
-            <div class="yyn-featuresWrapper">
+            <div className="yyn-featuresWrapper" id="about">
                 <h1>平台介绍</h1>
                 <ul className="yyn-features">
                     {listItem}

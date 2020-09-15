@@ -4,7 +4,7 @@
  * @Author: Magic
  * @Date: 2020-09-14 07:32:15
  * @LastEditors: Magic
- * @LastEditTime: 2020-09-14 21:23:20
+ * @LastEditTime: 2020-09-15 07:11:37
  */
 import React, { Component } from 'react'
 
@@ -20,7 +20,7 @@ export default class footer extends Component {
 
     render() {
         return (
-            <div class="yyn-footer">
+            <div className="yyn-footer">
                 <div className="yyn-admin">
                     运营登录：
                     <a className="yyn-op" href="#">运营平台</a>

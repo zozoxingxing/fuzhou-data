@@ -4,7 +4,7 @@
  * @Author: Magic
  * @Date: 2020-09-14 07:29:34
  * @LastEditors: Magic
- * @LastEditTime: 2020-09-14 22:16:36
+ * @LastEditTime: 2020-09-14 23:44:06
  */
 import React, { Component } from 'react'
 
@@ -50,7 +50,7 @@ export default class merchant extends Component {
             </li>)
         })
         return (
-            <div className="yyn-merchant">
+            <div className="yyn-merchant" id="merchant">
                 <div className="merchant-title">
                     <h1>诚信商家</h1>
                     <p>成为诚信商家，打造游客信任品牌</p>

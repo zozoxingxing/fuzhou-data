@@ -4,7 +4,7 @@
  * @Author: Magic
  * @Date: 2020-09-13 17:50:51
  * @LastEditors: Magic
- * @LastEditTime: 2020-09-14 07:41:21
+ * @LastEditTime: 2020-09-15 06:56:01
  */
 import React, { Component } from 'react'
 
@@ -17,6 +17,7 @@ import Experience from '../../components/experience'
 import Merchant from '../../components/merchant'
 import Tengyun from '../../components/tengyun'
 import Footer from '../../components/footer'
+import Tips from '../../components/tips'
 
 export default class home extends Component {
     render() {
@@ -44,6 +45,7 @@ export default class home extends Component {
                 <Merchant />
                 <Tengyun />
                 <Footer />
+                <Tips />
             </div>
         )
     }

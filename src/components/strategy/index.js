@@ -4,7 +4,7 @@
  * @Author: Magic
  * @Date: 2020-09-13 22:45:14
  * @LastEditors: Magic
- * @LastEditTime: 2020-09-14 07:24:17
+ * @LastEditTime: 2020-09-15 07:12:45
  */
 import React, { Component } from 'react'
 
@@ -46,7 +46,7 @@ export default class strategy extends Component {
                     <h3>{item.title}</h3>
                     <p dangerouslySetInnerHTML={{ __html: item.content }}></p>
                 </div>
-            </li >)
+            </li>)
         })
         return (
             <div className="yyn-strategyWrapper" >
