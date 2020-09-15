@@ -26,10 +26,10 @@ html,body{
 }
 
 .hideDom{
-    display: none;
+    display: none !important;
 }
 
 .mt10{margin-top: .1rem};.mt20{margin-top: .2rem};.mt30{margin-top: .3rem}
-.mb10{margin-bottom: .1rem};.mt20{margin-bottom: .2rem};.mt30{margin-bottom: .3rem}
-.ml10{margin-left: .1rem};.mt20{margin-left: .2rem};.mt30{margin-left: .3rem}
-.mr10{margin-right: .1rem};.mt20{margin-right: .2rem};.mt30{margin-right: .3rem}
+.mb10{margin-bottom: .1rem};.mb20{margin-bottom: .2rem};.mb30{margin-bottom: .3rem}
+.ml10{margin-left: .1rem};.ml20{margin-left: .2rem};.ml30{margin-left: .3rem}
+.mr10{margin-right: .1rem};.mr20{margin-right: .2rem};.mr30{margin-right: .3rem}

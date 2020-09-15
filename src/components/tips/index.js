@@ -4,7 +4,7 @@
  * @Author: Magic
  * @Date: 2020-09-14 23:46:29
  * @LastEditors: Magic
- * @LastEditTime: 2020-09-15 08:25:17
+ * @LastEditTime: 2020-09-15 21:48:02
  */
 import React, { Component } from 'react'
 
@@ -77,14 +77,15 @@ export default class tips extends Component {
         const tipsItem = this.state.tips.map((item, index) => {
             return (<li key={index} onClick={() => this.handleClick(index)}>
                 <i className={`iconfont ${item.icon}`}></i>
-                <div className={`yyn-more ${item.title && index < 2 ? '' : 'hideDom'}`} >
+                <div className={`yyn-more ${item.title && index < 3 ? (index === 2 ? 'email' : '') : 'hideDom'}`} >
                     <div className="angle"></div>
                     <div className="content">
                         <p>{item.title}</p>
-                        <img src={item.code} />
-                        <p className={`mt30 ${index === 1 ? '' : 'hide'}`}>{item.desc}</p>
+                        <img src={item.code} alt="二维码" className={item.code ? '' : 'hideDom'} />
+                        <p className={`mt20 ${index === 1 || index === 2 ? '' : 'hideDom'}`}>{item.desc}</p>
                     </div>
                 </div>
+
             </li>)
         })
         return (

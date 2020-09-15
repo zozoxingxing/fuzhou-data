@@ -4,10 +4,11 @@
  * @Author: Magic
  * @Date: 2020-09-13 18:07:19
  * @LastEditors: Magic
- * @LastEditTime: 2020-09-15 08:02:04
+ * @LastEditTime: 2020-09-15 22:21:08
  */
 import React, { Component } from 'react'
 
+import { Link } from 'react-router-dom'
 import './index.scss'
 
 export default class nav extends Component {
@@ -18,48 +19,55 @@ export default class nav extends Component {
                 {
                     id: '#home',
                     name: '首页',
-                    url: ''
+                    url: '/home'
                 },
                 {
                     id: '#about',
                     name: '平台介绍',
-                    url: ''
+                    url: '/home'
                 },
                 {
                     id: '#experience',
                     name: '产品体验',
-                    url: ''
+                    url: '/home'
                 },
                 {
                     id: '#merchant',
                     name: '诚信商家',
-                    url: ''
+                    url: '/home'
                 },
                 {
                     id: '',
                     name: '加入我们',
-                    url: ''
+                    url: '/job'
                 },
                 {
                     id: '',
                     name: '媒体报道',
-                    url: ''
+                    url: '/media'
                 }
             ],
             navIndex: 0
         }
     }
 
-    onChangeNav(index) {
+    onChangeNav(id, index) {
         this.setState({
             navIndex: index
         })
+        if (id) {
+            let offsetTop = id === '#home' ? 0 : document.querySelector(id).offsetTop;
+            window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+            })
+        }
     }
 
     render() {
         const listItem = this.state.navList.map((item, index) => {
-            return (<li key={index} className={this.state.navIndex === index ? 'active' : ''} onClick={() => this.onChangeNav(index)}>
-                <a href={item.id ? item.id : item.url}>{item.name}</a>
+            return (<li key={index} className={this.state.navIndex === index ? 'active' : ''} onClick={() => this.onChangeNav(item.id, index)}>
+                <Link to={item.url}>{item.name}</Link>
             </li>)
         })
         return (
