@@ -4,7 +4,7 @@
  * @Author: Magic
  * @Date: 2020-09-13 18:07:19
  * @LastEditors: Magic
- * @LastEditTime: 2020-09-15 22:21:08
+ * @LastEditTime: 2020-09-16 07:39:11
  */
 import React, { Component } from 'react'
 
@@ -55,10 +55,11 @@ export default class nav extends Component {
         this.setState({
             navIndex: index
         })
+        console.log(this.props, 999)
         if (id) {
             let offsetTop = id === '#home' ? 0 : document.querySelector(id).offsetTop;
             window.scrollTo({
-                top: offsetTop,
+                top: index > 3 ? 0 : offsetTop,
                 behavior: 'smooth'
             })
         }

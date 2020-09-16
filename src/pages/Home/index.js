@@ -4,27 +4,30 @@
  * @Author: Magic
  * @Date: 2020-09-13 17:50:51
  * @LastEditors: Magic
- * @LastEditTime: 2020-09-15 22:10:42
+ * @LastEditTime: 2020-09-15 23:03:29
  */
 import React, { Component } from 'react'
 
 import './index.scss'
 
-import Header from '../../components/header'
 import Platform from '../../components/platform'
 import Strategy from '../../components/strategy'
 import Experience from '../../components/experience'
 import Merchant from '../../components/merchant'
 import Tengyun from '../../components/tengyun'
-import Footer from '../../components/footer'
-import Tips from '../../components/tips'
 
 export default class home extends Component {
+    constructor(props) {
+        super(props)
+
+    }
+    handleNav(index) {
+        console.log(index, 'home')
+    }
     render() {
         return (
             <div className="yyn-wrapper">
                 <div className="yyn-headerWrapper">
-                    <Header />
                     <div className="yyn-home">
                         <div className="yyn-title">
                             <h1>云南旅游权威平台</h1>
@@ -44,8 +47,6 @@ export default class home extends Component {
                 <Experience />
                 <Merchant />
                 <Tengyun />
-                <Footer />
-                <Tips />
             </div>
         )
     }
