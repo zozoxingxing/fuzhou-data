@@ -7,9 +7,8 @@ export default class header extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            title: '福州数据资产',
-            platform: 'FUZHOU DATA ASSETS',
-            header: 'yyn-header'
+          moved: 0,
+          prevScroll: 0
         }
         this.onScroll = this.onScroll.bind(this)
     }
@@ -21,29 +20,44 @@ export default class header extends Component {
     }
 
     onScroll(event) {
-        const scrollTop = (event.srcElement ? event.srcElement.documentElement.scrollTop : false)
-            || window.pageYOffset
-            || (event.srcElement ? event.srcElement.body.scrollTop : 0);
-        console.log('------>', scrollTop);
-        if (scrollTop) {
-            this.setState({
-                header: 'yyn-header white'
-            })
-        } else {
-            this.setState({
-                header: 'yyn-header'
-            })
-        }
+      const currentY = window.scrollY
+      const prevScroll = this.state.prevScroll
+      if(currentY > 106 && currentY - prevScroll > 0) {
+        this.setState({
+          moved: -106
+        })
+      }else {
+        this.setState({
+          moved: 0
+        })
+      }
+      this.setState({
+        prevScroll: currentY
+      })
+        // const scrollTop = (event.srcElement ? event.srcElement.documentElement.scrollTop : false)
+        //     || window.pageYOffset
+        //     || (event.srcElement ? event.srcElement.body.scrollTop : 0);
+        // console.log('------>', window.scrollY);
+        // if (scrollTop) {
+        //     this.setState({
+        //         header: 'yyn-header white'
+        //     })
+        // } else {
+        //     this.setState({
+        //         header: 'yyn-header'
+        //     })
+        // }
     }
     render() {
+      const transform = `translate(0px, ${this.state.moved}px)`
         return (
-            <div className={this.state.header}>
+            <div className="header-wrap" style={{transform: transform }}>
                 <div className="header">
                     <dl>
                         <dt><img src={require('../../assets/images/yyn-logo.png')} alt="logo" /></dt>
                         <dd>
-                            <h3>{this.state.title}</h3>
-                            <p>{this.state.platform}</p>
+                            <h3>{'福州数据资产'}</h3>
+                            <p>{'FUZHOU DATA ASSETS'}</p>
                         </dd>
                     </dl>
                     <Nav />
