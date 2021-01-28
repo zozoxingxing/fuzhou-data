@@ -1,11 +1,4 @@
-/*
- * @Descripttion: 
- * @version: 
- * @Author: Magic
- * @Date: 2020-09-13 16:05:36
- * @LastEditors: Magic
- * @LastEditTime: 2020-09-15 21:50:33
- */
+
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 

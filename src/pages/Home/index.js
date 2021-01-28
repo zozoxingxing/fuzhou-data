@@ -17,9 +17,9 @@ import Merchant from '../../components/merchant'
 import Tengyun from '../../components/tengyun'
 
 export default class home extends Component {
+    // eslint-disable-next-line no-useless-constructor
     constructor(props) {
         super(props)
-
     }
     handleNav(index) {
         console.log(index, 'home')
