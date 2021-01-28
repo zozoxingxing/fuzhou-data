@@ -1,20 +1,23 @@
 .nav{
-    ul{
-        display: flex;
-        align-items: center;
-        li{
-            width: 1.4rem;
-            text-align: right;
-            cursor: pointer;
-            font-size: .16rem;
-            a{
-                color: $three;
-            }
-            &.active{
-                a{
-                    color: $tn;
-                }
-            }
-        }
+  width: 80%;
+  display: flex;
+  font-size: .16rem;
+  cursor: pointer;
+  .item {
+    width: 1.4rem;
+    text-align: center;
+    cursor: pointer;
+    font-size: .16rem;
+  }
+  &>div:nth-child(2) {
+    margin-right: 67%;
+  }
+  a{
+    color: #fff;
+  }
+  .active{
+    a{
+      color: #51B8FF;
     }
+  }
 }

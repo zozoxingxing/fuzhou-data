@@ -1,16 +1,8 @@
-/*
- * @Descripttion: 
- * @version: 
- * @Author: Magic
- * @Date: 2020-09-15 21:26:54
- * @LastEditors: Magic
- * @LastEditTime: 2020-09-17 22:32:55
- */
 import React, { Component } from 'react'
 
 import './index.scss'
 
-export default class job extends Component {
+export default class About extends Component {
     constructor(props) {
         super(props)
         this.state = {

@@ -7,12 +7,9 @@ import './assets/css/base.scss'
 import './assets/iconfont/iconfont.css'
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      header: '游云南'
-    }
-  }
+  // constructor(props) {
+  //   super(props)
+  // }
 
 
   render() {
