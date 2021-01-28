@@ -1,42 +1,76 @@
-/*
- * @Descripttion: 
- * @version: 
- * @Author: Magic
- * @Date: 2020-09-14 07:32:15
- * @LastEditors: Magic
- * @LastEditTime: 2020-09-15 22:18:46
- */
 import React, { Component } from 'react'
 
 import './index.scss'
 
 export default class footer extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            copyRight: 'Copyright ©  2020  ybsjyyn.com  All Rights Reserved.'
-        }
-    }
+    // constructor(props) {
+    //     super(props)
+    //     this.state = {
+    //         copyRight: 'Copyright ©  2020  ybsjyyn.com  All Rights Reserved.'
+    //     }
+    // }
 
     render() {
         return (
-            <div className="yyn-footer">
-                <div className="yyn-admin">
-                    运营登录：
-                    <a className="yyn-op" href="#">运营平台</a>
-                    <a className="yyn-mp" href="#">商户平台</a>
+            <div className="footer-wrap">
+              <div className="footer-top">
+                <div className="top-left">
+                  <div className="footer-logo">福州数据资产</div>
+                  <div className="footer-tele">
+                    <div>咨询热线</div>
+                    <div className="tele-num">123-123-1234</div>
+                  </div>
+                  <div className="footer-account">
+                    <div>福州数据资产官方公众号</div>
+                    <div>二维码</div>
+                  </div>
                 </div>
-                <div className="yyn-copyright">
-                    <p>{this.state.copyRight}</p>
-                    <p>腾云公司 版权所有&nbsp;&nbsp;客服电话：400-88-96301</p>
+                <div className="top-right">
+                  <div className="right-title">
+                    <div>产品服务</div>
+                    <div>解决方案</div>
+                    <div>关于我们</div>
+                    <div>友情链接</div>
+                  </div>
+                  <div className="right-content">
+                    <div className="content-data">
+                      <span>数据治理</span>
+                      <span>数据开发</span>
+                      <span>数据服务</span>
+                    </div>
+                    <div className="content-resolve">
+                      <div><span>金融</span> <span>新零售</span></div>
+                      <div><span>保险</span> <span>互联网</span></div>
+                      <div><span>物流</span> <span>政务</span></div>
+                    </div>
+                    <div className="content-us">
+                      <span>公司简介</span>
+                      <span>新闻中心</span>
+                      <span>最新政策</span>
+                    </div>
+                    <div className="content-link">
+                      <span>天翼云计算分公司</span>
+                      <span>天翼企业云盘</span>
+                      <span>189邮箱</span>
+                      <span>天翼账号</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="yyn-icp">
-                    <p>
-                        <img src={require('../../assets/images/yyn-icp.png')} alt="icp" />
-                        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=53011202000757">滇公网安备 53011202000757号</a>
-                    </p>
-                    <p><a href="http://www.beian.miit.gov.cn/">滇ICP备18000709号</a></p>
+              </div>
+              <div className="footer-bottom">
+                <div className="content">
+                  <div className="left-content">
+                    <span>@2021 福州数据资产运营公司</span>
+                    <span>xxxxxxxxxx</span>
+                  </div>
+                  <div className="right-content">
+                    <span>设为主页</span>|
+                    <span>用户协议</span>|
+                    <span>隐私政策</span>|
+                    <span>法律声明</span>
+                  </div>
                 </div>
+              </div>
             </div>
         )
     }
