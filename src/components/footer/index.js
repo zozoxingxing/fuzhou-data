@@ -3,26 +3,20 @@ import React, { Component } from 'react'
 import './index.scss'
 
 export default class footer extends Component {
-    // constructor(props) {
-    //     super(props)
-    //     this.state = {
-    //         copyRight: 'Copyright ©  2020  ybsjyyn.com  All Rights Reserved.'
-    //     }
-    // }
-
+   
     render() {
         return (
             <div className="footer-wrap">
               <div className="footer-top">
                 <div className="top-left">
-                  <div className="footer-logo">福州数据资产</div>
+                  <div className="footer-logo"></div>
                   <div className="footer-tele">
                     <div>咨询热线</div>
                     <div className="tele-num">123-123-1234</div>
                   </div>
                   <div className="footer-account">
-                    <div>福州数据资产官方公众号</div>
-                    <div>二维码</div>
+                    <div className="word">福州数据资产官方公众号</div>
+                    <div className="code"></div>
                   </div>
                 </div>
                 <div className="top-right">
