@@ -1,11 +1,3 @@
-/*
- * @Descripttion: 
- * @version: 
- * @Author: Magic
- * @Date: 2020-09-14 23:46:29
- * @LastEditors: Magic
- * @LastEditTime: 2020-09-15 21:48:02
- */
 import React, { Component } from 'react'
 
 import './index.scss'
@@ -14,33 +6,27 @@ export default class tips extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            tips: [
-                {
-                    icon: 'iconweixin',
-                    title: '微信公众号',
-                    desc: '',
-                    code: require('../../assets/images/yyn-wx.png')
-                },
-                {
-                    icon: 'iconweibo',
-                    title: '微博号',
-                    desc: '@一部手机游云南',
-                    code: require('../../assets/images/yyn-wb.png')
-                },
-                {
-                    icon: 'iconyouxiang',
-                    title: '邮箱',
-                    desc: 'ybsjyyn@yntengyun.com',
-                    code: ''
-                },
-                {
-                    icon: 'icontop',
-                    title: '',
-                    desc: '',
-                    code: ''
-                }
-            ],
-            showTips: 'yyn-tips'
+          tips: [
+            {
+              icon: 'iconweixin',
+              title: '微信公众号',
+              desc: '',
+              code: require('../../assets/images/yyn-wx.png')
+            },
+            {
+              icon: 'iconyouxiang',
+              title: '邮箱',
+              desc: 'ybsjyyn@yntengyun.com',
+              code: ''
+            },
+            {
+              icon: 'icontop',
+              title: '',
+              desc: '',
+              code: ''
+            }
+          ],
+          showTips: 'wrap-tips'
         }
         this.scrollTop = this.scrollTop.bind(this)
     }
@@ -56,11 +42,11 @@ export default class tips extends Component {
             || (event.srcElement ? event.srcElement.body.scrollTop : 0);
         if (scrollTop > 240) {
             this.setState({
-                showTips: 'yyn-tips showTips'
+                showTips: 'wrap-tips showTips'
             })
         } else {
             this.setState({
-                showTips: 'yyn-tips'
+                showTips: 'wrap-tips'
             })
         }
     }

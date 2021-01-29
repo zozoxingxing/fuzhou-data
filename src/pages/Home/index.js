@@ -1,11 +1,3 @@
-/*
- * @Descripttion: 
- * @version: 
- * @Author: Magic
- * @Date: 2020-09-13 17:50:51
- * @LastEditors: Magic
- * @LastEditTime: 2020-09-15 23:03:29
- */
 import React, { Component } from 'react'
 
 import './index.scss'
@@ -15,19 +7,18 @@ import Strategy from '../../components/strategy'
 import Experience from '../../components/experience'
 import Merchant from '../../components/merchant'
 import Tengyun from '../../components/tengyun'
-
+import Slide from '../../components/slide'
 export default class home extends Component {
-    // eslint-disable-next-line no-useless-constructor
-    constructor(props) {
-        super(props)
-    }
-    handleNav(index) {
-        console.log(index, 'home')
-    }
+    // constructor(props) {
+    //     super(props)
+    // }
+    // handleNav(index) {
+    //     console.log(index, 'home')
+    // }
     render() {
         return (
-            <div className="yyn-wrapper">
-                <div className="yyn-headerWrapper">
+            <div className="page-wrapper">
+                {/* <div className="yyn-headerWrapper">
                     <div className="yyn-home">
                         <div className="yyn-title">
                             <h1>云南旅游权威平台</h1>
@@ -41,7 +32,8 @@ export default class home extends Component {
                             <div className="cloud-big"></div>
                         </div>
                     </div>
-                </div>
+                </div> */}
+                <Slide />
                 <Platform />
                 <Strategy />
                 <Experience />
