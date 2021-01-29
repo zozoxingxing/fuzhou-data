@@ -1,16 +1,8 @@
-/*
- * @Descripttion: 
- * @version: 
- * @Author: Magic
- * @Date: 2020-09-13 21:46:50
- * @LastEditors: Magic
- * @LastEditTime: 2020-09-15 07:20:46
- */
 import React, { Component } from 'react'
 
 import './index.scss'
 
-export default class platform extends Component {
+export default class Product extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -51,8 +43,8 @@ export default class platform extends Component {
             </li>)
         })
         return (
-            <div className="yyn-featuresWrapper" id="about">
-                <h1>平台介绍</h1>
+            <div className="featuresWrapper" id="about">
+                <h1>产品服务</h1>
                 <ul className="yyn-features">
                     {listItem}
                 </ul>

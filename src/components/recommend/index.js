@@ -1,16 +1,8 @@
-/*
- * @Descripttion: 
- * @version: 
- * @Author: Magic
- * @Date: 2020-09-13 22:45:14
- * @LastEditors: Magic
- * @LastEditTime: 2020-09-15 07:12:45
- */
 import React, { Component } from 'react'
 
 import './index.scss'
 
-export default class strategy extends Component {
+export default class Recommend extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -49,8 +41,8 @@ export default class strategy extends Component {
             </li>)
         })
         return (
-            <div className="yyn-strategyWrapper" >
-                <h1>两大策略-促进产业发展</h1>
+            <div className="recommendWrapper" >
+                <div>热门推荐</div>
                 <ul className="yyn-strategy">
                     {listItem}
                 </ul>

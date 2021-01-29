@@ -7,8 +7,36 @@ export default class Slide extends Component {
     return(
       <div className="slide-wrapper">
         <div className="slide">
-          <div>23</div>
-          <Button type="primary">df</Button>
+          <Carousel  autoplay dotPosition="bottom">
+            <div className="slide-image1">
+              <div className="slide-title">
+                <span>商业地理大数据服务</span>
+                <span className="des">专业商业地产行业大数据服务供应商</span>
+                <Button type="primary">了解更多</Button>
+              </div>
+            </div>
+            <div className="slide-image1">
+              <div className="slide-title">
+                <span>商业地理大数据服务</span>
+                <span className="des">专业商业地产行业大数据服务供应商</span>
+                <Button type="primary">了解更多</Button>
+              </div>
+            </div>
+            <div className="slide-image1">
+              <div className="slide-title">
+                <span>商业地理大数据服务</span>
+                <span className="des">专业商业地产行业大数据服务供应商</span>
+                <Button type="primary">了解更多</Button>
+              </div>
+            </div>
+            <div className="slide-image1">
+              <div className="slide-title">
+                <span>商业地理大数据服务</span>
+                <span className="des">专业商业地产行业大数据服务供应商</span>
+                <Button type="primary">了解更多</Button>
+              </div>
+            </div>
+          </Carousel>
         </div>
       </div>
     )

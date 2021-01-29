@@ -2,44 +2,23 @@ import React, { Component } from 'react'
 
 import './index.scss'
 
-import Platform from '../../components/platform'
-import Strategy from '../../components/strategy'
+import Produce from '../../components/product'
+import Recommend from '../../components/recommend'
 import Experience from '../../components/experience'
 import Merchant from '../../components/merchant'
 import Tengyun from '../../components/tengyun'
 import Slide from '../../components/slide'
 export default class home extends Component {
-    // constructor(props) {
-    //     super(props)
-    // }
-    // handleNav(index) {
-    //     console.log(index, 'home')
-    // }
-    render() {
-        return (
-            <div className="page-wrapper">
-                {/* <div className="yyn-headerWrapper">
-                    <div className="yyn-home">
-                        <div className="yyn-title">
-                            <h1>云南旅游权威平台</h1>
-                            <p>提升游客旅行体验，规范旅游市场生态</p>
-                            <button>立即体验</button>
-                        </div>
-                        <div className="yyn-swiper">
-
-                        </div>
-                        <div className="yyn-cloud">
-                            <div className="cloud-big"></div>
-                        </div>
-                    </div>
-                </div> */}
-                <Slide />
-                <Platform />
-                <Strategy />
-                <Experience />
-                <Merchant />
-                <Tengyun />
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div className="page-wrapper">
+        <Slide />
+        <Produce />
+        <Recommend />
+        <Experience />
+        <Merchant />
+        <Tengyun />
+      </div>
+    )
+  }
 }
