@@ -2,7 +2,8 @@
   position: relative;
   height: 100vh;
   padding-top: 80px;
-  background: rgb(0, 183, 255);
+  background: url(../../assets/images/backgroun.png) no-repeat center center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   .top {
