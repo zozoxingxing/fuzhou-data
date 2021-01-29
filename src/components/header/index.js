@@ -34,35 +34,16 @@ export default class header extends Component {
       this.setState({
         prevScroll: currentY
       })
-        // const scrollTop = (event.srcElement ? event.srcElement.documentElement.scrollTop : false)
-        //     || window.pageYOffset
-        //     || (event.srcElement ? event.srcElement.body.scrollTop : 0);
-        // console.log('------>', window.scrollY);
-        // if (scrollTop) {
-        //     this.setState({
-        //         header: 'yyn-header white'
-        //     })
-        // } else {
-        //     this.setState({
-        //         header: 'yyn-header'
-        //     })
-        // }
     }
     render() {
       const transform = `translate(0px, ${this.state.moved}px)`
         return (
-            <div className="header-wrap" style={{transform: transform }}>
-                <div className="header">
-                    <dl>
-                        <dt><img src={require('../../assets/images/yyn-logo.png')} alt="logo" /></dt>
-                        <dd>
-                            <h3>{'福州数据资产'}</h3>
-                            <p>{'FUZHOU DATA ASSETS'}</p>
-                        </dd>
-                    </dl>
-                    <Nav />
-                </div>
+          <div className="header-wrap" style={{transform: transform }}>
+            <div className="header">
+              <div className="logo" />
+              <Nav />
             </div>
+          </div>
         )
     }
 }

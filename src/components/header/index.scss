@@ -11,37 +11,17 @@
     z-index: 20;
     transition: transform 0.5s linear;
     .header{
-        width: 15rem;
-        margin: 0 auto;
-        position: relative;
+      width: 15rem;
+      margin: 0 auto;
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo{
         height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        dl{
-            height: 100%;
-            width: 20%;
-            display: flex;
-            align-items: center;
-            dt{
-                img{
-                    width: .48rem;
-                    height: .48rem;
-                    display: block;
-                }
-            }
-            dd{
-                margin-left: .12rem;
-                h3{
-                    font-size: .25rem;
-                    font-weight: bold;
-                    color: white;
-                }
-                p{
-                    font-size: .02rem;
-                    color: rgba(138,138,138,.6);
-                }
-            }
+        width: 20%;
+        background: url(../../assets/images/logo.png) no-repeat center;
         }
     }
 }

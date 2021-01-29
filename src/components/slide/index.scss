@@ -1,5 +1,7 @@
 .slide-wrapper {
-  overflow: hidden;
+  // height: calc(100vh-106px);
+  // height: -moz-calc(100vh - (106px));
+  // height: -webkit-calc(100vh - (106px));
   .slide{
     .slide-image1 {
       background: url(../../assets/images/yyn-egret.png) no-repeat center center;
