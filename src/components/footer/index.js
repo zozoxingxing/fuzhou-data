@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Tips from '../../components/tips'
 
 import './index.scss'
 
@@ -7,6 +8,7 @@ export default class footer extends Component {
     render() {
         return (
             <div className="footer-wrap">
+              <Tips />
               <div className="footer-top">
                 <div className="top-left">
                   <div className="footer-logo"></div>
@@ -33,9 +35,9 @@ export default class footer extends Component {
                       <span>数据服务</span>
                     </div>
                     <div className="content-resolve">
-                      <div><span>金融</span> <span>新零售</span></div>
-                      <div><span>保险</span> <span>互联网</span></div>
-                      <div><span>物流</span> <span>政务</span></div>
+                      <span>金融 新零售</span>
+                      <span>保险 互联网</span>
+                      <span>物流 政务</span>
                     </div>
                     <div className="content-us">
                       <span>公司简介</span>

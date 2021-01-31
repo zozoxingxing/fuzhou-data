@@ -1,9 +1,10 @@
 .wrap-tips{
     display: flex;
     flex-direction: column;
-    position: fixed;
-    right: .1rem;
-    bottom: 1.6rem;
+    // position: fixed;
+    position: absolute;
+    right: 0;
+    bottom: 1rem;
     z-index: 20;
     background: #3c8ce7;
     transition-duration: .3s;

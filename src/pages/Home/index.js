@@ -6,7 +6,7 @@ import Produce from '../../components/product'
 import Recommend from '../../components/recommend'
 import Experience from '../../components/experience'
 import Merchant from '../../components/merchant'
-import Tengyun from '../../components/tengyun'
+import News from '../../components/news'
 import Slide from '../../components/slide'
 export default class home extends Component {
   render() {
@@ -17,7 +17,7 @@ export default class home extends Component {
         <Recommend />
         <Experience />
         <Merchant />
-        <Tengyun />
+        <News />
       </div>
     )
   }

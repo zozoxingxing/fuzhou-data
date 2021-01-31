@@ -1,16 +1,9 @@
-/*
- * @Descripttion: 
- * @version: 
- * @Author: Magic
- * @Date: 2020-09-14 07:29:57
- * @LastEditors: Magic
- * @LastEditTime: 2020-09-14 08:19:49
- */
-import React, { Component } from 'react'
 
+import React, { Component } from 'react'
+import Footer from '../../components/footer'
 import './index.scss'
 
-export default class tengyun extends Component {
+export default class News extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -50,20 +43,19 @@ export default class tengyun extends Component {
 
     }
     render() {
-        const listItem = this.state.jobs.map((item, index) => {
-            return (<li key={index} onClick={() => this.goDetail(item.url)}>{item.name}</li>)
-        })
+        // const listItem = this.state.jobs.map((item, index) => {
+        //     return (<li key={index} onClick={() => this.goDetail(item.url)}>{item.name}</li>)
+        // })
         return (
-            <div className="yyn-tengyun">
-                <div className="tengyun-title">
-                    <h1>腾云之上，方见浩瀚</h1>
-                    <p>立即加入腾云！</p>
-                </div>
-                <ul className="tengyun-block">
-                    {listItem}
-                </ul>
-                <button>岗位详情</button>
+          <div className="news-warpper">
+            <div className="news">
+              <div className="news-top">
+                <div className="main-title">新闻动态</div>
+                <div className="main-content">新闻内容</div>
+              </div>
+              <Footer />
             </div>
+          </div>
         )
     }
 }

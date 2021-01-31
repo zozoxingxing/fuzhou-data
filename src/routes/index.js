@@ -14,8 +14,7 @@ import About from '../pages/About'
 import Login from '../pages/Login'
 import Regisrer from '../pages/Register'
 import Header from '../components/header'
-import Footer from '../components/footer'
-import Tips from '../components/tips'
+
 
 export default class route extends Component {
     render() {
@@ -27,8 +26,6 @@ export default class route extends Component {
                 <Route path="/job" component={About} />
                 <Route path="/media" component={Login} />
                 <Router path="/register" component={Regisrer} />
-                <Footer />
-                <Tips />
             </div>
         </Router>)
     }

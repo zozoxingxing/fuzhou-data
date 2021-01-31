@@ -1,15 +1,15 @@
 .footer-wrap {
+  position: relative;
   background: #02173B;
-  height: 414px;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   .footer-top {
-    width: 70%;
+    width: 80%;
     flex: 1;
     display: flex;
     margin: 0 auto;
-    padding: 77px 0 10px;
-    // border: 1px solid #fff;
+    padding: 20px 0px 0px;
     color: #fff;
     .top-left{
       display: flex;
@@ -17,15 +17,14 @@
       width: 40%;
       font-size: 12px;
       .footer-logo{
-        height: 50px;
-        background-size: cover;
+        height: 30px;
         background: url(../../assets/images/logo.png) no-repeat;
-        margin-bottom: 27px;
+        background-size: contain;
       }
       .footer-tele{
-        margin-bottom: 15px;
+        margin: 15px 0;
         .tele-num{
-          font-size: 18px;
+          font-size: 15px;
         }
       }
       .footer-account {
@@ -33,10 +32,10 @@
           margin-bottom: 5px;
         }
         .code {
-          background: url(../../assets/images/code.png) no-repeat;
+          background: url(../../assets/images/code.png) no-repeat center center;
           background-size: cover;
-          height: 70px;
-          width: 70px;
+          height: 60px;
+          width: 60px;
         }
       }
     }
@@ -45,12 +44,13 @@
       flex-direction: column;
       width: 100%;
       .right-title{
-        font-size: 14px;
         height: 20px;
         display: flex;
         margin-bottom: 30px;
         div{
           width: 25%;
+          display: flex;
+          justify-content: center;
         }
       }
       .right-content{
@@ -61,18 +61,20 @@
           display: flex;
           flex-direction: column;
           div, span{
-            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
           }
         }
       }
     }
   }
   .footer-bottom {
-    height: 72px;
+    height: 50px;
     color: #fff;
     background: #000419;
     .content{
-      width: 70%;
+      width: 80%;
       height: 100%;
       margin: 0 auto;
       display: flex;
@@ -85,6 +87,7 @@
       }
       .right-content{
         display: flex;
+        margin-right: 50px;
         span{
           margin: 0 3px;
         }
