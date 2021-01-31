@@ -1,7 +1,8 @@
 .recommendWrapper{
   position: relative;
   height: 100vh;
-  padding-top: 80px;
+  min-height: 750px;
+  padding-top: 60px;
   background: url(../../assets/images/backgroun.png) no-repeat center center;
   background-size: cover;
   display: flex;
@@ -14,12 +15,16 @@
     .title{
       color: #fff;
       font-size: 28px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
+    }
+    .more {
+      font-size: 14px;
+      color: #409FE0;
     }
   }
   .content{
     position: absolute;
-    top: 180px;
+    top: 170px;
     bottom: 0px;
     width: 100%;
     display: flex;
@@ -28,8 +33,47 @@
       width: 40%;
     }
     .content-right {
-      width: 40%;
-      // border: 1px solid #000;
+      width: 33%;
+      .ant-steps-vertical {
+        &>div:last-child{
+          display: none;
+        }
+        .ant-steps-item-active {
+          .ant-steps-item-title {
+            color: rgb(52, 134, 193);
+          }
+          .ant-steps-item-description {
+            background: linear-gradient( rgba(52, 134, 193, 0.7) 100%,rgba(64,159,224,0.3) 0%);
+            // padding: 0 1px;
+            border-radius: 3px;
+          }
+        }
+        .ant-steps-item-icon {
+          .ant-steps-icon {
+            display: none
+          }
+        }
+        .ant-steps-item-tail {
+          left: 10px;
+          padding: 25px 0 6px
+        }
+        .ant-steps-item-tail::after {
+          background: #409FE0;
+        }
+        .ant-steps-item-icon {
+          width: 20px;
+          height: 20px;
+        }
+        .ant-steps-item-title {
+          font-size: 16px;
+          color: rgba(255,255,255,.6);
+        }
+        .ant-steps-item-description {
+          font-size: 12px;
+          width: 300px;
+          color: rgba(255,255,255,.6);
+        }
+      }
     }
   }
 }

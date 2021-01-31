@@ -1,10 +1,11 @@
 .slide-wrapper {
+  height: 100vh;
   // height: calc(100vh-106px);
   // height: -moz-calc(100vh - (106px));
   // height: -webkit-calc(100vh - (106px));
   .slide{
     .slide-image1 {
-      background: url(../../assets/images/banner.png) no-repeat;
+      background: url(../../assets/images/banner.png) no-repeat center;
       background-size: cover;
       height: 100vh;
       color: #fff;
