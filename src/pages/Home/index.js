@@ -4,7 +4,7 @@ import './index.scss'
 
 import Produce from '../../components/product'
 import Recommend from '../../components/recommend'
-import Experience from '../../components/experience'
+import Unit from '../../components/unit'
 import Plan from '../../components/plan'
 import News from '../../components/news'
 import Slide from '../../components/slide'
@@ -15,7 +15,7 @@ export default class home extends Component {
         <Slide />
         <Produce />
         <Recommend />
-        <Experience />
+        <Unit />
         <Plan />
         <News />
       </div>
