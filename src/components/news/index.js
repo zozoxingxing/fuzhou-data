@@ -4,57 +4,74 @@ import Footer from '../../components/footer'
 import './index.scss'
 
 export default class News extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            jobs: [
-                {
-                    name: '公共事务',
-                    url: ''
-                },
-                {
-                    name: '平台运营',
-                    url: ''
-                },
-                {
-                    name: '产品技术',
-                    url: ''
-                },
-                {
-                    name: '商务拓展',
-                    url: ''
-                },
-                {
-                    name: '市场品牌策划',
-                    url: ''
-                },
-                {
-                    name: '电商运营',
-                    url: ''
-                },
-                {
-                    name: '设计师',
-                    url: ''
-                }
-            ]
-        }
-    }
-    goDetail(url) {
-
-    }
+  
     render() {
-        // const listItem = this.state.jobs.map((item, index) => {
-        //     return (<li key={index} onClick={() => this.goDetail(item.url)}>{item.name}</li>)
-        // })
+      const newsList = [
+        {
+          url: require('../../assets/images/news1.png'),
+          time: '2021-1-22',
+          title: '这是一个新闻标题',
+          content: '它的主要特点是伸缩容器有能力让它的伸缩项目改变它的宽度顺序等来最合适地填充可用空间。是伸缩容器有能力让它的伸缩项目改变它的宽是伸缩容器有能力让它的伸缩项目改变它的宽是伸缩容器有能力让它的伸缩项目改变它的宽'
+        },{
+          url: require('../../assets/images/news2.png'),
+          time: '2021-1-22',
+          title: '这是一个新闻标题',
+          content: '它的主要特点是伸缩容器有能力让它的伸缩项目改变它的宽度顺序等来最合适地填充可用空间。'
+
+        },{
+          url: require('../../assets/images/news3.png'),
+          time: '2021-1-22',
+          title: '这是一个新闻标题',
+          content: '它的主要特点是伸缩容器有能力让它的伸缩项目改变它的宽度顺序等来最合适地填充可用空间。'
+        },
+        {
+          url: require('../../assets/images/news4.png'),
+          time: '2021-1-22',
+          title: '这是一个新闻标题',
+          content: '它的主要特点是伸缩容器有能力让它的伸缩项目改变它的宽度顺序等来最合适地填充可用空间。'
+
+        },{
+          url: require('../../assets/images/news5.png'),
+          time: '2021-1-22',
+          title: '这是一个新闻标题'
+        },{
+          url: require('../../assets/images/news6.png'),
+          time: '2021-1-22',
+          title: '这是一个新闻标题',
+          content: '它的主要特点是伸缩容器有能力让它的伸缩项目改变它的宽度顺序等来最合适地填充可用空间。'
+
+        }
+      ]
+        const listItem = newsList.map((item, index) => {
+          return (
+            <div className="news-item" key={index}>
+              {/* <img className="news-image" alt="img" src={item.url} /> */}
+              {/* <div className="news-time">{item.time}</div> */}
+              <div className="image-wrapper">
+                <div className="image">
+                  {/* <img className="news-image" alt="img" src={item.url} />  */}
+                </div>
+                <div className="time">{item.time}</div>
+              </div>
+              <div className="news-detail">
+                <div className="news-title">{item.title}</div>   
+                <div className="news-content">{item.content}</div>             
+              </div>
+            </div>
+          )
+        })
         return (
           <div className="news-warpper">
             <div className="news">
               <div className="news-top">
                 <div className="main-title">新闻动态</div>
-                <div className="main-content">新闻内容</div>
+                <div className="main-content">{listItem}</div>
               </div>
+            </div>
+            <div className="footer">
               <Footer />
             </div>
+            {/* <Footer /> */}
           </div>
         )
     }

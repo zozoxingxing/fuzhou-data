@@ -1,7 +1,7 @@
 .footer-wrap {
   position: relative;
   background: #02173B;
-  height: 30vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   .footer-top {
@@ -9,7 +9,7 @@
     flex: 1;
     display: flex;
     margin: 0 auto;
-    padding: 20px 0px 0px;
+    padding: 10px 0px 0px;
     color: #fff;
     .top-left{
       display: flex;
@@ -22,7 +22,7 @@
         background-size: contain;
       }
       .footer-tele{
-        margin: 15px 0;
+        margin: 10px 0;
         .tele-num{
           font-size: 15px;
         }
