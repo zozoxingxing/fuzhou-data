@@ -7,17 +7,19 @@ import About from '../pages/About'
 import Login from '../pages/Login'
 import Regisrer from '../pages/Register'
 import Header from '../components/header'
+import NewsItem from '../pages/News'
 
 export default class route extends Component {
     render() {
       return (
       <Router>
         <Header/>
-        <Route path="/" render={() => (<Redirect to="/job" />)} />
+        <Route path="/" render={() => (<Redirect to="/home" />)} />
         <Route path="/home" component={Home} />
-        <Route path="/job" component={About} />
+        <Route path="/about" component={About} />
         <Route path="/media" component={Login} />
-        <Router path="/register" component={Regisrer} />
+        <Route path="/register" component={Regisrer} />
+        <Route path="/news" component={NewsItem} />
       </Router>)
     }
 }

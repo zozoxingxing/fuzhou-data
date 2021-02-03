@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import Footer from '../../components/footer'
 import './index.scss'
+import { Link } from 'react-router-dom'
 
 export default class News extends Component {
   
@@ -59,10 +60,10 @@ export default class News extends Component {
         return (
           <div className="news-warpper">
             <div className="news">
-              <div className="news-top">
+              <Link className="news-top" to='/news'>
                 <div className="main-title">新闻动态</div>
                 <div className="main-content">{listItem}</div>
-              </div>
+              </Link>
             </div>
             <div className="footer">
               <Footer />

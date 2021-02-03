@@ -5,22 +5,7 @@ import './index.scss'
 const { TabPane } = Tabs;
 
 export default class About extends Component {
-    constructor(props) {
-        super(props)
-        this.workList = {
-          name: '公司概况',
-          intr: '经常性的进行市场调查，收集相关旅游市场信息，寻找并开发潜在客户，及时、妥善地处理客户意见和投诉等,经常性的进行市场调查，收集相关旅游市场信息，寻找并开发潜在客户，及时、妥善地处理客户意见和投诉等'
-        }
-        this.state = {
-          defaultIndex: 0,
-        }
-    }
-    onShowContext(index) {
-      this.setState({
-          defaultIndex: index
-      })
-    }
-
+  
     render() {
         const contentList = [
           {

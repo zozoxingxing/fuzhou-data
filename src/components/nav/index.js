@@ -24,7 +24,7 @@ export default class nav extends Component {
             position: 'left'
           },{
             name: '关于我们',
-            url: '/job',
+            url: '/about',
             position: 'left'
           },{
             name: '登录',
