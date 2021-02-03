@@ -13,7 +13,7 @@ export default class route extends Component {
       return (
       <Router>
         <Header/>
-        <Route path="/" render={() => (<Redirect to="/home" />)} />
+        <Route path="/" render={() => (<Redirect to="/job" />)} />
         <Route path="/home" component={Home} />
         <Route path="/job" component={About} />
         <Route path="/media" component={Login} />

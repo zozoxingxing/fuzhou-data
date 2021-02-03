@@ -45,12 +45,8 @@ export default class News extends Component {
         const listItem = newsList.map((item, index) => {
           return (
             <div className="news-item" key={index}>
-              {/* <img className="news-image" alt="img" src={item.url} /> */}
-              {/* <div className="news-time">{item.time}</div> */}
               <div className="image-wrapper">
-                <div className="image">
-                  {/* <img className="news-image" alt="img" src={item.url} />  */}
-                </div>
+                <div className="image"></div>
                 <div className="time">{item.time}</div>
               </div>
               <div className="news-detail">
@@ -71,7 +67,6 @@ export default class News extends Component {
             <div className="footer">
               <Footer />
             </div>
-            {/* <Footer /> */}
           </div>
         )
     }
