@@ -11,13 +11,12 @@ export default class Product extends Component {
         }
     }
     componentDidMount() {
-      const self = this;
+    const self = this;
      new Swiper ('.swiper-container',{
       slideToClickedSlide: true,
       grabCursor : true,
       speed: 1000,
       initialSlide: 0,
-      // effect : 'coverflow',
       preventClicks: false,
       spaceBetween: 100,
       slidesPerView: 3, //显示三个，宽度平分
@@ -89,31 +88,26 @@ export default class Product extends Component {
                 <div className="swiper-slide">
                   <div className="ava">
                     <img src={require('../../assets/images/data1.png')} alt=""/>
-                    <div className="line"></div>
                     <div className="title">数据开发</div>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div className="ava">
                     <img src={require('../../assets/images/data2.png')} alt="" />
-                    <div className="line"></div>
                     <div className="title">数据治理</div>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div className="ava">
                     <img src={require('../../assets/images/data3.png')} alt="" />
-                    <div className="line"></div>
                     <div className="title">数据服务</div>
                   </div>
                 </div>
               </div>
-              <div className="swiper-button-prev" slot="button-prev">
-                {/* <img style={{width:'100%',height:'100%'}} src={require('../../assets/images/OCR.png')} alt="" /> */}
-              </div>
-              <div className="swiper-button-next"></div>
+              <div className="swiper-button-prev" />
+              <div className="swiper-button-next" />
             </div>
-            <div className="word">
+            <div className="word-container">
               {
                 activeContent[this.state.activeIndex].map((item, index) => {
                   return (

@@ -7,7 +7,7 @@ export default class Slide extends Component {
     return(
       <div className="slide-wrapper">
         <div className="slide">
-          <Carousel dotPosition="bottom">
+          <Carousel dotPosition="bottom" autoplay>
             <div className="slide-image1">
               <div className="slide-title">
                 <span>商业地理大数据服务</span>

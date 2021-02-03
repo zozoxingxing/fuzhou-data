@@ -1,13 +1,12 @@
 .nav{
   width: 80%;
   display: flex;
-  font-size: 14px;
   cursor: pointer;
   .item {
-    width: 1.4rem;
+    width: 25%;
     text-align: center;
     cursor: pointer;
-    font-size: .16rem;
+    font-size: 14px;
   }
   &>div:nth-child(2) {
     margin-right: 67%;

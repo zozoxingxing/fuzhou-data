@@ -41,7 +41,7 @@ export default class header extends Component {
           <div className="header-wrap" style={{transform: transform }}>
             <div className="header">
               <div className="logo" />
-              <Nav />
+              <Nav/>
             </div>
           </div>
         )

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Icon } from 'antd'
 
 import './index.scss'
-import { isTSEnumMember } from '@babel/types'
 
 export default class Unit extends Component {
     constructor(props) {

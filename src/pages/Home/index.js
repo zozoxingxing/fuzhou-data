@@ -12,12 +12,12 @@ export default class home extends Component {
   render() {
     return (
       <div className="page-wrapper">
-        <Slide />
-        <Produce />
-        <Recommend />
-        <Unit />
-        <Plan />
-        <News />
+        <Slide/>
+        <Produce/>
+        <Recommend/>
+        <Unit/>
+        <Plan/>
+        <News/>
       </div>
     )
   }

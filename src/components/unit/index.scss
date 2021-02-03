@@ -36,7 +36,6 @@
       width: 500px;
       .item-wrap {
         width: 60%;
-        // height: 70%;
         display: flex;
         flex-direction: column;
         .data {
@@ -68,6 +67,7 @@
     .content-right {
       flex: 1;
       position: relative;
+      overflow: hidden;
       .image-one{
         height: 85%;
         border: 20px solid #000;
