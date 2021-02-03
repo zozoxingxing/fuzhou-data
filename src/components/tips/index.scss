@@ -1,7 +1,6 @@
 .wrap-tips{
     display: flex;
     flex-direction: column;
-    // position: fixed;
     position: absolute;
     right: 0;
     bottom: 1rem;
@@ -14,8 +13,8 @@
         opacity: 1;
     }
     li{
-        width: .5rem;
-        height: .5rem;
+        width: 30px;
+        height: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -24,14 +23,13 @@
         cursor: pointer;
         position: relative;
         i{
-            font-size: .3rem;
+            font-size: 13px;
             color: #fff;
         }
         .yyn-more{
             width: 2.2rem;
             max-height: 3.4rem;
             transform-origin: 120% 0 0;
-            -webkit-transform-origin: 120% 0 0;
             position: absolute;
             left: -2.5rem;
             top: 0;

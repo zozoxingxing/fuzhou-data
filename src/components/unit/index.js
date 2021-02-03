@@ -1,48 +1,9 @@
 import React, { Component } from 'react'
 import { Icon } from 'antd'
-
 import './index.scss'
 
 export default class Unit extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            downloadList: [
-                {
-                    title: '一部手机游云南',
-                    icon: require('../../assets/images/yyn-android.png'),
-                    code: [
-                        require('../../assets/images/yyn-downloadCode.png')
-                    ],
-                    desc: 'Android下载',
-                    from: '前往应用宝下载体验'
-                },
-                {
-                    title: '一部手机游云南',
-                    icon: require('../../assets/images/yyn-apple.png'),
-                    code: [
-                        require('../../assets/images/yyn-downloadCode.png')
-                    ],
-                    desc: 'iPhone下载',
-                    from: '前往App Store下载体验'
-                },
-                {
-                    title: '游云南直播',
-                    icon: require('../../assets/images/yyn-apple.png'),
-                    code: [
-                        require('../../assets/images/yyn-ec1.png'),
-                        require('../../assets/images/yyn-ec2.png'),
-                        require('../../assets/images/yyn-ec3.png'),
-                        require('../../assets/images/yyn-ec4.png'),
-                        require('../../assets/images/yyn-ec5.png')
-                    ],
-                    desc: '小程序体验',
-                    from: '扫码体验'
-                }
-            ]
-        }
-    }
-
+    
     render() {
         const dataList = [
           {

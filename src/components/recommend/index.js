@@ -39,7 +39,7 @@ export default class Recommend extends Component {
         }else {
           val[i] = {
             name: val[i].name,
-            symbolSize: 50, // 控制每个圆的大小
+            symbolSize: 65, // 控制每个圆的大小
             draggable: true, // 控制是否可拖动
             category: val[i].category, // 对应工具显示隐藏
             itemStyle: {
@@ -169,7 +169,7 @@ export default class Recommend extends Component {
           type: 'graph',
           layout: 'force',
           force: {
-            repulsion: 500,
+            repulsion: 800,
             edgeLength: 50
           },
           label: {
@@ -179,11 +179,12 @@ export default class Recommend extends Component {
             }
           },
           emphasis: {
-            // focus: 'self'
-            // itemStyle: {
-            //   borderWidth: 3,
-            //   borderColor: '#000'
-            // }
+            // focus: 'self',
+            scale: true,
+            itemStyle: {
+              shadowColor: '#162d5e',
+              shadowBlur: 20
+            }
           },
           data: this.praseSource(sourceData),
           links: this.praseLink(linkData),
@@ -247,7 +248,7 @@ export default class Recommend extends Component {
             </div>
             <div className="content">
               <div className="content-left">
-                <div id="logo" style={{width: '100%',height: '500px'}}/>
+                <div id="logo" style={{width: '100%',height: '100%'}}/>
               </div>
               <div className="content-right">
                 <Steps

@@ -6,7 +6,7 @@
   height: 100vh;
   min-height: 750px;
   padding-top: 60px;
-  background: url(../../assets/images/backgroun.png) no-repeat center center;
+  background: url(../../assets/images/background4.png) no-repeat center center;
   background-size: cover;
   .top {
     height: 100px;
@@ -70,7 +70,7 @@
       overflow: hidden;
       .image-one{
         height: 85%;
-        border: 20px solid #000;
+        border: 20px solid #fff;
         border-right: 0px;
         border-radius: 15px 0 0 15px;
         background: url(../../assets//images/screen1.png) no-repeat;
@@ -78,11 +78,11 @@
       }
       .image-two {
         position: absolute;
-        border: 20px solid #000;
+        border: 20px solid #fff;
         border-right: 0px;
         border-radius: 15px 0 0 15px;
-        top: 15%;
-        left: 10%;
+        top: 12%;
+        left: 9%;
         height: 85%;
         width: 100%;
         background: url(../../assets//images/screen2.png) no-repeat;

@@ -15,8 +15,8 @@ export default class home extends Component {
         <Slide/>
         <Produce/>
         <Recommend/>
-        <Unit/>
         <Plan/>
+        <Unit/>
         <News/>
       </div>
     )

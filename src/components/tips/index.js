@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { Icon } from 'antd'
 import './index.scss'
 
 export default class tips extends Component {
@@ -8,19 +8,19 @@ export default class tips extends Component {
         this.state = {
           tips: [
             {
-              icon: 'iconweixin',
+              icon: 'edit',
               title: '微信公众号',
               desc: '',
               code: require('../../assets/images/yyn-wx.png')
             },
             {
-              icon: 'iconyouxiang',
+              icon: 'phone',
               title: '邮箱',
               desc: 'ybsjyyn@yntengyun.com',
               code: ''
             },
             {
-              icon: 'icontop',
+              icon: 'up',
               title: '',
               desc: '',
               code: ''
@@ -62,7 +62,8 @@ export default class tips extends Component {
     render() {
         const tipsItem = this.state.tips.map((item, index) => {
             return (<li key={index} onClick={() => this.handleClick(index)}>
-                <i className={`iconfont ${item.icon}`}></i>
+                {/* <i className={`iconfont ${item.icon}`}></i> */}
+                <Icon type={item.icon}/>
                 <div className={`yyn-more ${item.title && index < 3 ? (index === 2 ? 'email' : '') : 'hideDom'}`} >
                     <div className="angle"></div>
                     <div className="content">

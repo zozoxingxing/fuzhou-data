@@ -1,9 +1,8 @@
 .recommendWrapper{
-  position: relative;
   height: 100vh;
   min-height: 750px;
-  padding-top: 60px;
-  background: url(../../assets/images/backgroun.png) no-repeat center center;
+  padding-top: 60px ;
+  background: url(../../assets/images/background23.png) no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -23,14 +22,13 @@
     }
   }
   .content{
-    position: absolute;
-    top: 170px;
-    bottom: 0px;
-    width: 100%;
+    flex: 1;
     display: flex;
     justify-content: center;
+    height: 100%;
     .content-left {
-      width: 40%;
+      width: 45%;
+      margin-top: 10px;
     }
     .content-right {
       width: 33%;
@@ -40,12 +38,13 @@
         }
         .ant-steps-item-active {
           .ant-steps-item-title {
-            color: rgb(52, 134, 193);
+            color: #fff;
           }
           .ant-steps-item-description {
+            color: #fff;
             background: linear-gradient( rgba(52, 134, 193, 0.7) 100%,rgba(64,159,224,0.3) 0%);
-            // padding: 0 1px;
             border-radius: 3px;
+            padding: 3px;
           }
         }
         .ant-steps-item-icon {
@@ -70,7 +69,8 @@
         }
         .ant-steps-item-description {
           font-size: 12px;
-          width: 300px;
+          width: 340px;
+          height: 60px;
           color: rgba(255,255,255,.6);
         }
       }

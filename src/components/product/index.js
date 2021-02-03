@@ -99,7 +99,7 @@ export default class Product extends Component {
                 </div>
                 <div className="swiper-slide">
                   <div className="ava">
-                    <img src={require('../../assets/images/data3.png')} alt="" />
+                    <img src={require('../../assets/images/data3.png')} alt=""/>
                     <div className="title">数据服务</div>
                   </div>
                 </div>
