@@ -42,9 +42,9 @@ export default class About extends Component {
                   {navItem}
                 </Tabs>
               </div>
-              <div className="footer">
+              {/* <div className="footer">
                 <Footer/>
-              </div>
+              </div> */}
             </div>
         )
     }

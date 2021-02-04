@@ -87,19 +87,19 @@ export default class Product extends Component {
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
                   <div className="ava">
-                    <img src={require('../../assets/images/data1.png')} alt=""/>
+                    <img src={require('../../assets/images/data11.png')} alt=""/>
                     <div className="title">数据开发</div>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div className="ava">
-                    <img src={require('../../assets/images/data2.png')} alt="" />
+                    <img src={require('../../assets/images/data22.png')} alt="" />
                     <div className="title">数据治理</div>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div className="ava">
-                    <img src={require('../../assets/images/data3.png')} alt=""/>
+                    <img src={require('../../assets/images/data33.png')} alt=""/>
                     <div className="title">数据服务</div>
                   </div>
                 </div>

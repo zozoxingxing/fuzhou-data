@@ -16,10 +16,10 @@ export default class footer extends Component {
                     <div>咨询热线</div>
                     <div className="tele-num">123-123-1234</div>
                   </div>
-                  <div className="footer-account">
+                  {/* <div className="footer-account">
                     <div className="word">福州数据资产官方公众号</div>
                     <div className="code"></div>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="top-right">
                   <div className="right-title">

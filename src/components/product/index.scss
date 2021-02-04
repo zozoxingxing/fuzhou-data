@@ -31,16 +31,16 @@
           transform: scale(1.5);
           transition: transform 3s;
           background: url(../../assets/images/pro_background.png) no-repeat center ;
-          background-size: 40%;
+          background-size: 50%;
           .ava {
             img {
-              bottom: 45px;
+              bottom: 15px;
             }
             .title {
               border-bottom: 1px solid #43B0FF;
               color: #43B0FF;
-              bottom: 15px;
-              font-size: 16px;
+              bottom: 0px;
+              font-size: 13px;
             }
           }
         }
@@ -53,27 +53,26 @@
           color: #fff;
           .ava {
             position: relative;
-            height: 100px;
-            width: 100px;
+            height: 110px;
+            width: 110px;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #1D93B9;
             img {
               position: absolute;
-              width: 40px;
-              height: 40px;
+              width: 90px;
+              height: 90px;
             }
             .title {
-              font-size: 15px;
+              font-size: 14px;
               position: absolute;
               bottom: -30px;
             }
           }
         }
         .swiper-button-prev {
-          left: 35%;
+          left: 33%;
           background: url(../../assets/images/left.png) no-repeat center;
           background-size: contain;
         }
@@ -81,7 +80,7 @@
           content: '';
         }
         .swiper-button-next {
-          right: 35%;
+          right: 33%;
           background: url(../../assets/images/right.png) no-repeat center;
           background-size: contain;
         }

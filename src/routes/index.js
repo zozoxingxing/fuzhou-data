@@ -14,7 +14,7 @@ export default class route extends Component {
       return (
       <Router>
         <Header/>
-        <Route path="/" render={() => (<Redirect to="/home" />)} />
+        <Route path="/" exact render={() => (<Redirect to="/home" />)} />
         <Route path="/home" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/media" component={Login} />
