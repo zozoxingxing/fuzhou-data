@@ -60,10 +60,10 @@ export default class News extends Component {
         return (
           <div className="news-warpper">
             <div className="news">
-              <Link className="news-top" to='/news' target="_brank" rel="noopener noreferrer">
+              <div className="news-top" onClick={()=>{window.open('/news', '_brank')}}>
                 <div className="main-title">新闻动态</div>
                 <div className="main-content">{listItem}</div>
-              </Link>
+              </div>
             </div>
             <div className="footer">
               <Footer />

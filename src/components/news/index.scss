@@ -1,6 +1,7 @@
 .news-warpper {
   height: 100vh;
   display: flex;
+  min-height: 700px;
   flex-direction: column;
   background: url('../../assets//images/background4.png') no-repeat center center;
   .news {

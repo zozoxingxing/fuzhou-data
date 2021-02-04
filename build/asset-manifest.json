@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.48d959a1.chunk.css",
-    "main.js": "/static/js/main.908b4dff.chunk.js",
-    "main.js.map": "/static/js/main.908b4dff.chunk.js.map",
+    "main.css": "/static/css/main.6b2fa7ab.chunk.css",
+    "main.js": "/static/js/main.64c8e435.chunk.js",
+    "main.js.map": "/static/js/main.64c8e435.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.046262a6.js",
     "runtime-main.js.map": "/static/js/runtime-main.046262a6.js.map",
     "static/css/2.730bb298.chunk.css": "/static/css/2.730bb298.chunk.css",
-    "static/js/2.269e2d2f.chunk.js": "/static/js/2.269e2d2f.chunk.js",
-    "static/js/2.269e2d2f.chunk.js.map": "/static/js/2.269e2d2f.chunk.js.map",
+    "static/js/2.7c1a27c2.chunk.js": "/static/js/2.7c1a27c2.chunk.js",
+    "static/js/2.7c1a27c2.chunk.js.map": "/static/js/2.7c1a27c2.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a4488195d812c5b39ac81af7f9c99bd8.js": "/precache-manifest.a4488195d812c5b39ac81af7f9c99bd8.js",
+    "precache-manifest.40c2d86eed44a83c30411abe3d63f2c2.js": "/precache-manifest.40c2d86eed44a83c30411abe3d63f2c2.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.730bb298.chunk.css.map": "/static/css/2.730bb298.chunk.css.map",
-    "static/css/main.48d959a1.chunk.css.map": "/static/css/main.48d959a1.chunk.css.map",
-    "static/js/2.269e2d2f.chunk.js.LICENSE.txt": "/static/js/2.269e2d2f.chunk.js.LICENSE.txt",
+    "static/css/main.6b2fa7ab.chunk.css.map": "/static/css/main.6b2fa7ab.chunk.css.map",
+    "static/js/2.7c1a27c2.chunk.js.LICENSE.txt": "/static/js/2.7c1a27c2.chunk.js.LICENSE.txt",
     "static/media/OCR.png": "/static/media/OCR.8380cb23.png",
     "static/media/index.scss": "/static/media/yyn-mediabg.7974a89d.png",
     "static/media/card.png": "/static/media/card.125f55f4.png",
-    "static/media/data2.png": "/static/media/data2.8007fcbb.png",
+    "static/media/data11.png": "/static/media/data11.6f0f0f79.png",
+    "static/media/data22.png": "/static/media/data22.83590c5f.png",
+    "static/media/data33.png": "/static/media/data33.d8158e11.png",
     "static/media/iconfont.css": "/static/media/iconfont.de2f3a30.ttf",
     "static/media/insurance.png": "/static/media/insurance.59ba0fd1.png",
     "static/media/money.png": "/static/media/money.b0e84f20.png",
@@ -36,8 +38,8 @@
   "entrypoints": [
     "static/js/runtime-main.046262a6.js",
     "static/css/2.730bb298.chunk.css",
-    "static/js/2.269e2d2f.chunk.js",
-    "static/css/main.48d959a1.chunk.css",
-    "static/js/main.908b4dff.chunk.js"
+    "static/js/2.7c1a27c2.chunk.js",
+    "static/css/main.6b2fa7ab.chunk.css",
+    "static/js/main.64c8e435.chunk.js"
   ]
 }

@@ -169,8 +169,8 @@ export default class Recommend extends Component {
           type: 'graph',
           layout: 'force',
           force: {
-            repulsion: 800,
-            edgeLength: 50
+            repulsion: 600,
+            edgeLength: 100
           },
           label: {
             normal: {
@@ -179,13 +179,13 @@ export default class Recommend extends Component {
             }
           },
           emphasis: {
-            // focus: 'self',
             scale: true,
             itemStyle: {
               shadowColor: '#162d5e',
               shadowBlur: 20
             }
           },
+          top: 0,
           data: this.praseSource(sourceData),
           links: this.praseLink(linkData),
           lineStyle: {
@@ -248,7 +248,7 @@ export default class Recommend extends Component {
             </div>
             <div className="content">
               <div className="content-left">
-                <div id="logo" style={{width: '100%',height: '100%'}}/>
+                <div id="logo" style={{width: '100%',height: '100%' }}/>
               </div>
               <div className="content-right">
                 <Steps
