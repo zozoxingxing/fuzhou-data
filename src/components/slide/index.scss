@@ -1,9 +1,17 @@
 .slide-wrapper {
   height: 100vh;
-  width: 100%;
+  position: relative;
+  .nav-wrap {
+    height: 106px;
+  }
   .slide{
+    position: absolute;
+    top: 106px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     .ant-carousel .slick-dots-bottom {
-      bottom: 100px;
+      bottom: 200px;
       padding-left: 15%;
       text-align: start;
       li.slick-active button{
@@ -24,7 +32,7 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        bottom: 45%;
+        top: 35%;
         left: 15%;
         color: #fff;
         font-size: 20px;

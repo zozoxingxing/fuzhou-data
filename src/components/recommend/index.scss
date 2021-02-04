@@ -1,6 +1,7 @@
 .recommendWrapper{
   height: 100vh;
   min-height: 750px;
+  min-width: 800px;
   padding-top: 60px ;
   background: url(../../assets/images/background23.png) no-repeat center center;
   background-size: cover;
@@ -45,6 +46,10 @@
             background: linear-gradient( rgba(52, 134, 193, 0.7) 100%,rgba(64,159,224,0.3) 0%);
             border-radius: 3px;
             padding: 3px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
           }
         }
         .ant-steps-item-icon {

@@ -1,7 +1,6 @@
 .nav{
-  width: 80%;
+  width: 75%;
   display: flex;
-  cursor: pointer;
   .item {
     width: 25%;
     text-align: center;
@@ -9,7 +8,7 @@
     font-size: 14px;
   }
   &>div:nth-child(2) {
-    margin-right: 67%;
+    margin-right: 50%;
   }
   a{
     color: #fff;

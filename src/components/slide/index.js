@@ -6,6 +6,7 @@ export default class Slide extends Component {
   render() {
     return(
       <div className="slide-wrapper">
+        <div className="nav-wrap"></div>
         <div className="slide">
           <Carousel dotPosition="bottom" autoplay>
             <div className="slide-image1">

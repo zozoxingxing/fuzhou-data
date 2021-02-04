@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d363ff03.chunk.css",
+    "main.js": "/static/js/main.1d145e76.chunk.js",
+    "main.js.map": "/static/js/main.1d145e76.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.046262a6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.046262a6.js.map",
+    "static/css/2.730bb298.chunk.css": "/static/css/2.730bb298.chunk.css",
+    "static/js/2.269e2d2f.chunk.js": "/static/js/2.269e2d2f.chunk.js",
+    "static/js/2.269e2d2f.chunk.js.map": "/static/js/2.269e2d2f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8bd0d47eaa4273342812bd9e22416ca6.js": "/precache-manifest.8bd0d47eaa4273342812bd9e22416ca6.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.730bb298.chunk.css.map": "/static/css/2.730bb298.chunk.css.map",
+    "static/css/main.d363ff03.chunk.css.map": "/static/css/main.d363ff03.chunk.css.map",
+    "static/js/2.269e2d2f.chunk.js.LICENSE.txt": "/static/js/2.269e2d2f.chunk.js.LICENSE.txt",
+    "static/media/OCR.png": "/static/media/OCR.8380cb23.png",
+    "static/media/index.scss": "/static/media/yyn-mediabg.7974a89d.png",
+    "static/media/card.png": "/static/media/card.125f55f4.png",
+    "static/media/data2.png": "/static/media/data2.8007fcbb.png",
+    "static/media/iconfont.css": "/static/media/iconfont.de2f3a30.ttf",
+    "static/media/insurance.png": "/static/media/insurance.59ba0fd1.png",
+    "static/media/money.png": "/static/media/money.b0e84f20.png",
+    "static/media/news1.png": "/static/media/news1.29d9122c.png",
+    "static/media/news2.png": "/static/media/news2.a69158f6.png",
+    "static/media/news3.png": "/static/media/news3.4c234520.png",
+    "static/media/news4.png": "/static/media/news4.0c46f9b6.png",
+    "static/media/news5.png": "/static/media/news5.b6b14474.png",
+    "static/media/news6.png": "/static/media/news6.d891ada4.png",
+    "static/media/tax.png": "/static/media/tax.17cfb8f6.png",
+    "static/media/three.png": "/static/media/three.be04f7d6.png",
+    "static/media/trade.png": "/static/media/trade.50b18ab4.png",
+    "static/media/traffic.png": "/static/media/traffic.bde96033.png",
+    "static/media/yyn-wx.png": "/static/media/yyn-wx.7a5692bd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.046262a6.js",
+    "static/css/2.730bb298.chunk.css",
+    "static/js/2.269e2d2f.chunk.js",
+    "static/css/main.d363ff03.chunk.css",
+    "static/js/main.1d145e76.chunk.js"
+  ]
+}
