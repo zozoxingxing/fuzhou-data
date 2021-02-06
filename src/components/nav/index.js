@@ -26,15 +26,16 @@ export default class nav extends Component {
             name: '关于我们',
             url: '/about',
             position: 'left'
-          },{
-            name: '登录',
-            url: '/home',
-            position: 'right'
-          },{
-            name: '注册',
-            url: '/home',
-            position: 'right'
-          }
+          },
+          // {
+          //   name: '登录',
+          //   url: '/home',
+          //   position: 'right'
+          // },{
+          //   name: '注册',
+          //   url: '/home',
+          //   position: 'right'
+          // }
         ]
         const listItem = navList.map((item, index) => {
             return (

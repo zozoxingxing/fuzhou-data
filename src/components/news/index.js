@@ -2,7 +2,8 @@
 import React, { Component } from 'react'
 import Footer from '../../components/footer'
 import './index.scss'
-import { Link } from 'react-router-dom'
+import news1 from '../../assets/images/news1.png';
+// import { Link } from 'react-router-dom'
 
 export default class News extends Component {
   
@@ -44,10 +45,15 @@ export default class News extends Component {
         }
       ]
         const listItem = newsList.map((item, index) => {
+          const background = {
+            background: `url(${item.url})  no-repeat center`,
+            backgroundSize: 'cover'
+          }
           return (
             <div className="news-item" key={index}>
               <div className="image-wrapper">
-                <div className="image"></div>
+                <div className="image" style={background}></div>
+
                 <div className="time">{item.time}</div>
               </div>
               <div className="news-detail">

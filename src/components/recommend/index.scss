@@ -1,10 +1,7 @@
 .recommendWrapper{
   height: 100vh;
   min-height: 750px;
-  min-width: 800px;
   padding-top: 60px ;
-  background: url(../../assets/images/background23.png) no-repeat center center;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   .top {
@@ -22,18 +19,23 @@
       color: #409FE0;
     }
   }
-  .content{
+  .content-wrap{
     flex: 1;
     display: flex;
     justify-content: center;
-    height: 100%;
+    align-items: center;
+    .content {
+      width: 80%;
+      height: 80%;
+      display: flex;
     .content-left {
-      width: 45%;
-      margin-top: 10px;
+      flex: 1;
       min-width: 550px;
+      }
     }
     .content-right {
-      width: 33%;
+      flex: 1;
+      display: flex;
       .ant-steps-vertical {
         &>div:last-child{
           display: none;
@@ -70,13 +72,13 @@
           height: 20px;
         }
         .ant-steps-item-title {
-          font-size: 16px;
+          font-size: 14px;
           color: rgba(255,255,255,.6);
         }
         .ant-steps-item-description {
           font-size: 12px;
           width: 340px;
-          height: 60px;
+          // height: 60px;
           color: rgba(255,255,255,.6);
         }
       }

@@ -1,14 +1,12 @@
 .slide-wrapper {
   height: 100vh;
-  position: relative;
+  display: flex;
   .nav-wrap {
-    height: 106px;
+    flex-shrink: 0;
+    height: 76px;
   }
   .slide{
-    position: absolute;
-    top: 106px;
-    left: 0;
-    bottom: 0;
+    flex: 1;
     width: 100%;
     .ant-carousel .slick-dots-bottom {
       bottom: 200px;

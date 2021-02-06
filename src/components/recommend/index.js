@@ -169,7 +169,7 @@ export default class Recommend extends Component {
           type: 'graph',
           layout: 'force',
           force: {
-            repulsion: 600,
+            repulsion: 500,
             edgeLength: 100
           },
           label: {
@@ -178,14 +178,16 @@ export default class Recommend extends Component {
                 color: 'rgba(0,0,0,0)'
             }
           },
+          zoom: 0.9,
           emphasis: {
+            focus:'adjacency',
             scale: true,
             itemStyle: {
               shadowColor: '#162d5e',
               shadowBlur: 20
             }
           },
-          top: 0,
+          top: '10%',
           data: this.praseSource(sourceData),
           links: this.praseLink(linkData),
           lineStyle: {
@@ -246,28 +248,30 @@ export default class Recommend extends Component {
                 查看更多<Icon type="right"/>
               </div>
             </div>
-            <div className="content">
-              <div className="content-left">
-                <div id="logo" style={{width: '100%',height: '100%' }}/>
-              </div>
-              <div className="content-right">
-                <Steps
-                  direction="vertical"
-                  current={current}
-                  onChange={this.onChange}
-                  >
-                  {
-                    recommentContent.map((item, index) => {
-                      return(
-                        <Step
-                          key={index}
-                          title={item.title}
-                          description={item.description}
-                        />
-                      )
-                    })
-                  }
-                </Steps>
+            <div className="content-wrap">
+              <div className="content">
+                <div className="content-left">
+                  <div id="logo" style={{width: '100%',height: '100%'}}/>
+                </div>
+                <div className="content-right">
+                  <Steps
+                    direction="vertical"
+                    current={current}
+                    onChange={this.onChange}
+                    >
+                    {
+                      recommentContent.map((item, index) => {
+                        return(
+                          <Step
+                            key={index}
+                            title={item.title}
+                            description={item.description}
+                          />
+                        )
+                      })
+                    }
+                  </Steps>
+                </div>
               </div>
             </div>
           </div>

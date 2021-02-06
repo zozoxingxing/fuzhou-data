@@ -11,7 +11,6 @@ export default class tips extends Component {
               icon: 'edit',
               title: '微信公众号',
               desc: '',
-              code: require('../../assets/images/yyn-wx.png')
             },
             {
               icon: 'phone',
