@@ -10,7 +10,9 @@ class App extends Component {
  
   render() {
     return (
-      <Router />
+      <div style={{width:'100%',overflow:'hidden'}}>
+        <Router />
+      </div>
     )
   }
 }

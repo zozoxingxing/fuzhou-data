@@ -23,6 +23,7 @@ export default class Plan extends Component {
         slidesPerView: 5, //显示三个，宽度平分
         centeredSlides: true, // active slide 居中设置（默认居左）
         loop: true, // 循环
+        parallax : true,
       })
     }
     render() {
