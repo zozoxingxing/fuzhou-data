@@ -39,9 +39,11 @@ export default class header extends Component {
       const transform = `translate(0px, ${this.state.moved}px)`
         return (
           <div className="header-wrap" style={{transform: transform }}>
-            <div className="header">
-              <div className="logo" />
-              <Nav/>
+            <div className='header-box'>
+                <div className="header">
+                    <div className="logo" />
+                    <Nav/>
+                </div>
             </div>
           </div>
         )

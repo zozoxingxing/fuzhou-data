@@ -1,7 +1,9 @@
 import React, {useState, useEffect, useCallback} from 'react'
+import {connect} from 'react-redux';
 import './index.scss'
 import Swiper from 'swiper/js/swiper.js';
 import "swiper/css/swiper.min.css"
+import {actionCreators} from '../../components/header/store';
 
 import Produce from '../../components/product'
 import Recommend from '../../components/recommend'
@@ -11,56 +13,42 @@ import News from '../../components/news'
 import Slide from '../../components/slide'
 
 const Home = props => {
+    const {handleHeaderShowOrHide} = props;
     const [height, setHeight] = useState(0);
+    // const [scrollTop, setScrollTop] = useState(0);
 
     const onResize = useCallback(() => {
         setHeight(document.body.clientHeight)
-        console.log('onResize', document.body.clientHeight);
-
     }, [])
 
     useEffect(() => {
         setHeight(document.body.clientHeight)
+        // setScrollTop(Math.max(document.documentElement.scrollTop, document.body.scrollTop))
         window.addEventListener('resize', onResize);
         return (() => {
             window.removeEventListener('resize', onResize)
         })
-    }, [])
-
-    const handleScroll = () => {
-        const viewHeight = document.body.clientHeight;// 网页可见区域高
-        const scrollHeight = document.body.scrollHeight;// 浏览器所有内容高度
-        // documentElement 对应的是 html 标签，而 body 对应的是 body 标签。
-        // 当前页面的滚动条纵坐标位置 => document.documentElement.scrollTop
-        // 网页被卷去的高 => document.body.scrollTop
-        const scrollTop = Math.max(document.documentElement.scrollTop, document.body.scrollTop);
-        // 滚动到页面底部
-        if (scrollTop + viewHeight >= (scrollHeight - 50)) {
-            console.log('scroll');
-
-        }
-    }
-
-// 滚动条添加滚动事件
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            // 移除滚动条滚动事件
-            window.removeEventListener('scroll', handleScroll);
-        }
-    }, [])
+    }, [height])
 
     useEffect(() => {
         new Swiper('.swiper-container4', {
             direction: 'vertical',
             slidesPerView: 1,
             mousewheel: true,
+            on: {
+                slideChange: function () {
+                    handleHeaderShowOrHide && handleHeaderShowOrHide(!this.activeIndex)
+                },
+            }
         })
     }, [height])
 
     return (
         <div className="page-wrapper">
-            <div className="swiper-container4" style={{height: height - 76, marginTop: 76}}>
+            <div
+                className="swiper-container4"
+                style={{height: height}}
+            >
                 <div className="swiper-wrapper">
                     <div className="swiper-slide">
                         <div style={{width: '100%'}}><Slide/></div>
@@ -82,14 +70,20 @@ const Home = props => {
                     </div>
                 </div>
             </div>
-            {/*<Slide/>
-    <Produce/>
-    <Recommend/>
-    <Plan/>
-    <Unit/>
-    <News/>*/}
         </div>
     )
 }
 
-export default Home;
+const mapState = (state) => ({
+    headerShow: state.getIn(['header', 'headerShow']),
+})
+
+const mapDispatch = (dispatch) => {
+    return {
+        handleHeaderShowOrHide(value) {
+            dispatch(actionCreators.handleHeaderShowOrHide(value));
+        }
+    }
+}
+
+export default connect(mapState, mapDispatch)(Home);

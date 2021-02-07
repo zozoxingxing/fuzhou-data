@@ -1,0 +1,1 @@
+export const HEADER_SHOW_OR_HIDE = 'header/image/HEADER_SHOW_OR_HIDE';
