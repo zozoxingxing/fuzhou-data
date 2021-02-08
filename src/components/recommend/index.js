@@ -15,15 +15,11 @@ const env = require('../../assets/images/env.png')
  const Recommend = prop => {
    const [current, setCurrent] = useState(0)
    const [chart, setChart] = useState(null)
-   
-  //  useEffect(() => {
-  //   const chart = echarts.init(document.getElementById('logo'))
-  //   setChart(chart)
-  //  }, [])
-  
+    
     useEffect(() => {
       const chart = echarts.init(document.getElementById('logo'))
       setChart(chart)
+
       if(chart) chart.setOption(option) 
       return () => {
         if(chart) {
