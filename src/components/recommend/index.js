@@ -180,7 +180,7 @@ export default class Recommend extends Component {
           },
           zoom: 0.9,
           emphasis: {
-            focus:'adjacency',
+            focus:'self',
             scale: true,
             itemStyle: {
               shadowColor: '#162d5e',
