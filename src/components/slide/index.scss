@@ -1,6 +1,7 @@
 .slide-wrapper {
   height: 100vh;
   display: flex;
+  position: relative;
   .nav-wrap {
     flex-shrink: 0;
     height: 76px;
@@ -12,6 +13,7 @@
       bottom: 200px;
       padding-left: 15%;
       text-align: start;
+      z-index: 200;
       li.slick-active button{
         background: #409FE0;
       }
@@ -21,7 +23,7 @@
     }
   
     .slide-image1 {
-      background: url(https://lanjinghongan.oss-cn-beijing.aliyuncs.com/assets/web/bg_index.png) no-repeat center;
+      background: url(https://honganstatic.cls.cn/assets/web/bg_index.png) no-repeat center;
       background-size: cover;
       height: 100vh;
       color: #fff;
@@ -43,5 +45,14 @@
         }
       }
     }
+  }
+  .slide-modal-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
   }
 }

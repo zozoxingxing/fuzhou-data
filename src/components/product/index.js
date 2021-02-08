@@ -87,9 +87,9 @@ export default class Product extends Component {
                 <div className="swiper-wrapper">
                     {
                         [
-                            {name: '数据开发', value: require('../../assets/images/data11.png')},
-                            {name: '数据治理', value: require('../../assets/images/data22.png')},
-                            {name: '数据服务', value: require('../../assets/images/data33.png')},
+                            {name: '数据开发', value: 'https://honganstatic.cls.cn/assets/web/data11.png'},
+                            {name: '数据治理', value: 'https://honganstatic.cls.cn/assets/web/data22.png'},
+                            {name: '数据服务', value: 'https://honganstatic.cls.cn/assets/web/data33.png'},
                         ].map((item, index) => (
                             <div className="swiper-slide" key={index}>
                                 <div className="ava">

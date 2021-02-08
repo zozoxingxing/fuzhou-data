@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Icon, Steps } from 'antd'
 import './index.scss'
 import * as echarts from 'echarts/lib/echarts'
@@ -12,22 +12,30 @@ const three = require('../../assets/images/three.png')
 const person = require('../../assets/images/person.png')
 const env = require('../../assets/images/env.png')
 
-export default class Recommend extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-          current: 0,
-          chart: null
-        }
-    }
-    componentDidMount() {
+ const Recommend = prop => {
+   const [current, setCurrent] = useState(0)
+   const [chart, setChart] = useState(null)
+   
+  //  useEffect(() => {
+  //   const chart = echarts.init(document.getElementById('logo'))
+  //   setChart(chart)
+  //  }, [])
+  
+    useEffect(() => {
       const chart = echarts.init(document.getElementById('logo'))
-      this.setState({chart})
+      setChart(chart)
+      if(chart) chart.setOption(option) 
+      return () => {
+        if(chart) {
+          chart.dispose()
+        }
+      }
+    }, [current])
+ 
+    const onChange = (current) => {
+      setCurrent(current)
     }
-    onChange = (current) => {
-      this.setState({ current })
-    }
-    praseSource = (val) => {
+    const praseSource = (val) => {
       for (var i = 0; i < val.length; i++) {
         if (val[i].category === 6) {
           val[i] = {
@@ -53,7 +61,7 @@ export default class Recommend extends Component {
       }
       return val
     }
-    praseLink = (val) => {
+    const praseLink = (val) => {
       for (var i = 0; i < val.length; i++) {
         if(i > 4) {
           val[i]['lineStyle'] = {
@@ -67,7 +75,7 @@ export default class Recommend extends Component {
       }
       return val
     }
-    render() {
+    
       // 有图片和没图片的关系项的类型非标为0、1
       const sourceData = [
         {
@@ -134,7 +142,7 @@ export default class Recommend extends Component {
           target: 'empty1'
         },
       ]
-      var typeData = [
+      const typeData = [
         {
         name: '证件OCR',
         symbolKeepAspect: true,
@@ -188,8 +196,8 @@ export default class Recommend extends Component {
             }
           },
           top: '10%',
-          data: this.praseSource(sourceData),
-          links: this.praseLink(linkData),
+          data: praseSource(sourceData),
+          links: praseLink(linkData),
           lineStyle: {
             color: '#3385C1',
             width: 2,
@@ -198,19 +206,15 @@ export default class Recommend extends Component {
           categories: typeData 
         }]
       }
-      if(this.state.chart){
-        this.state.chart.off('click')
-        this.state.chart.setOption(option)
-        this.state.chart.on('click', (params) => {
+      if(chart){
+        chart.off('click')
+        chart.on('click', (params) => {
           const category = params.data.category
           if(category < 6) {
-            this.setState({
-              current: category
-            })
+            setCurrent(category)
           }
         })
       }
-      const { current } = this.state
       const recommentContent = [
         {
           title: '证件OCR',
@@ -257,7 +261,7 @@ export default class Recommend extends Component {
                   <Steps
                     direction="vertical"
                     current={current}
-                    onChange={this.onChange}
+                    onChange={onChange}
                     >
                     {
                       recommentContent.map((item, index) => {
@@ -276,5 +280,7 @@ export default class Recommend extends Component {
             </div>
           </div>
         )
-    }
+    
 }
+
+export default Recommend;

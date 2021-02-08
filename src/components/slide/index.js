@@ -39,6 +39,7 @@ export default class Slide extends Component {
             </div>
           </Carousel>
         </div>
+        <div className="slide-modal-wrap"/>
       </div>
     )
   }

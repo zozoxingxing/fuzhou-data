@@ -10,34 +10,34 @@ export default class News extends Component {
     render() {
       const newsList = [
         {
-          url: require('../../assets/images/news1.png'),
+          url: 'https://honganstatic.cls.cn/assets/web/news1.png',
           time: '2021-1-22',
           title: '这是一个新闻标题',
           content: '它的主要特点是伸缩容器有能力让它的伸缩项目改变它的宽度顺序等来最合适地填充可用空间。是伸缩容器有能力让它的伸缩项目改变它的宽是伸缩容器有能力让它的伸缩项目改变它的宽是伸缩容器有能力让它的伸缩项目改变它的宽'
         },{
-          url: require('../../assets/images/news2.png'),
+          url: 'https://honganstatic.cls.cn/assets/web/news2.png',
           time: '2021-1-22',
           title: '这是一个新闻标题',
           content: '它的主要特点是伸缩容器有能力让它的伸缩项目改变它的宽度顺序等来最合适地填充可用空间。'
 
         },{
-          url: require('../../assets/images/news3.png'),
+          url: 'https://honganstatic.cls.cn/assets/web/news3.png',
           time: '2021-1-22',
           title: '这是一个新闻标题',
           content: '它的主要特点是伸缩容器有能力让它的伸缩项目改变它的宽度顺序等来最合适地填充可用空间。'
         },
         {
-          url: require('../../assets/images/news4.png'),
+          url: 'https://honganstatic.cls.cn/assets/web/news4.png',
           time: '2021-1-22',
           title: '这是一个新闻标题',
           content: '它的主要特点是伸缩容器有能力让它的伸缩项目改变它的宽度顺序等来最合适地填充可用空间。'
 
         },{
-          url: require('../../assets/images/news5.png'),
+          url: 'https://honganstatic.cls.cn/assets/web/news5.png',
           time: '2021-1-22',
           title: '这是一个新闻标题'
         },{
-          url: require('../../assets/images/news6.png'),
+          url: 'https://honganstatic.cls.cn/assets/web/news6.png',
           time: '2021-1-22',
           title: '这是一个新闻标题',
           content: '它的主要特点是伸缩容器有能力让它的伸缩项目改变它的宽度顺序等来最合适地填充可用空间。'
