@@ -1,16 +1,14 @@
 .nav{
-  width: 80%;
+  width: 100%;
   display: flex;
+  margin-left: 60px;
   .item {
-    // width: 20%;
-    margin: 20px;
+    margin-right: 50px;  
     text-align: center;
     cursor: pointer;
     font-size: 14px;
+    line-height: 20px;
   }
-  // &>div:nth-child(2) {
-  //   margin-right: 50%;
-  // }
   a{
     color: #fff;
   }

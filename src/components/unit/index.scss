@@ -5,22 +5,26 @@
   justify-content: center;
   height: 100vh;
   min-height: 750px;
-  padding-top: 60px;
-  // background: url(../../assets/images/background4.png) no-repeat center center;
-  // background-size: cover;
+  padding-top: 80px;
   .top {
     height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     .title{
-      color: #fff;
+      font-family: PingFangSC-Semibold;
       font-size: 28px;
-      margin-bottom: 15px;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 24px;
+      margin-bottom: 30px;
     }
     .more {
+      font-family: PingFangSC-Regular;
       font-size: 14px;
       color: #409FE0;
+      text-align: center;
     }
   }
   .content {
@@ -52,6 +56,7 @@
             .data-title {
               font-size: 20px;
               color: #409FE0;
+              margin-bottom: 20px;
             }
             .data-content {
               height: 50px;

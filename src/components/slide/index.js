@@ -11,28 +11,29 @@ export default class Slide extends Component {
           <Carousel dotPosition="bottom" autoplay>
             <div className="slide-image1">
               <div className="slide-title">
-                <span>商业地理大数据服务</span>
+                <span className="sub-title">商业地理大数据服务</span>
+                <span className="des">专业商业地产行业大数据服务供应商
+                  为商业地产、住宅地产、零售连锁商家提供前策研判、消费者洞察、品牌招商、运营诊断、竞品分析等服务。</span>
+                <Button type="primary">了解更多</Button>
+              </div>
+            </div>
+            <div className="slide-image1">
+              <div className="slide-title">
+                <span className="sub-title">商业地理大数据服务</span>
                 <span className="des">专业商业地产行业大数据服务供应商</span>
                 <Button type="primary">了解更多</Button>
               </div>
             </div>
             <div className="slide-image1">
               <div className="slide-title">
-                <span>商业地理大数据服务</span>
+                <span className="sub-title">商业地理大数据服务</span>
                 <span className="des">专业商业地产行业大数据服务供应商</span>
                 <Button type="primary">了解更多</Button>
               </div>
             </div>
             <div className="slide-image1">
               <div className="slide-title">
-                <span>商业地理大数据服务</span>
-                <span className="des">专业商业地产行业大数据服务供应商</span>
-                <Button type="primary">了解更多</Button>
-              </div>
-            </div>
-            <div className="slide-image1">
-              <div className="slide-title">
-                <span>商业地理大数据服务</span>
+                <span className="sub-title">商业地理大数据服务</span>
                 <span className="des">专业商业地产行业大数据服务供应商</span>
                 <Button type="primary">了解更多</Button>
               </div>

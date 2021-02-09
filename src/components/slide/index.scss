@@ -10,7 +10,7 @@
     flex: 1;
     width: 100%;
     .ant-carousel .slick-dots-bottom {
-      bottom: 200px;
+      bottom: 100px;
       padding-left: 15%;
       text-align: start;
       z-index: 200;
@@ -23,7 +23,7 @@
     }
   
     .slide-image1 {
-      background: url(https://honganstatic.cls.cn/assets/web/bg_index.png) no-repeat center;
+      background: url(https://honganstatic.cls.cn/assets/web/new-slide.png) no-repeat center;
       background-size: cover;
       height: 100vh;
       color: #fff;
@@ -35,10 +35,17 @@
         top: 35%;
         left: 15%;
         color: #fff;
-        font-size: 20px;
+        .sub-title {
+          font-size: 42px;
+          line-height: 36px;
+          width: 378px;
+          height: 36px;
+        }
         .des {
-          margin: 15px 0 20px 0;
-          font-size: 10px;
+          margin: 30px 0 50px 0;
+          font-size: 16px;
+          width: 760px;
+          height: 31px;
         }
         .ant-btn-primary {
           width: 100px;

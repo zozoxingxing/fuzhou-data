@@ -1,22 +1,29 @@
 .recommendWrapper{
   height: 100vh;
   min-height: 750px;
-  padding-top: 60px ;
+  padding-top: 80px ;
   display: flex;
   flex-direction: column;
   .top {
+    margin-bottom: 60px;
     height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     .title{
-      color: #fff;
+      font-family: PingFangSC-Semibold;
       font-size: 28px;
-      margin-bottom: 15px;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 24px;
+      margin-bottom: 30px;
     }
     .more {
+      font-family: PingFangSC-Regular;
       font-size: 14px;
       color: #409FE0;
+      text-align: center;
     }
   }
   .content-wrap{
@@ -26,7 +33,7 @@
     align-items: center;
     .content {
       width: 80%;
-      height: 80%;
+      height: 100%;
       display: flex;
     .content-left {
       flex: 1;
@@ -36,23 +43,68 @@
     .content-right {
       flex: 1;
       display: flex;
+      width: 843px;
+      margin-left: 141px;
       .ant-steps-vertical {
         &>div:last-child{
           display: none;
         }
+        // .ant-steps-item {
+        //   border: 1px solid red;
+        //   .ant-steps-item-content {
+        //     width: 506px;
+        //     // height: 101px;
+        //   }
+        //   .ant-steps-item-title {
+            
+        //   }
+        //   .ant-steps-item-description {
+        //     font-size: 14px;
+        //     color: rgba(255,255,255,0.60);
+        //     line-height: 24px;
+        //     width: 400px;
+        //   }
+        // }
         .ant-steps-item-active {
           .ant-steps-item-title {
             color: #fff;
           }
-          .ant-steps-item-description {
+          .ant-steps-item-content {
+            // position: relative
+            width: 506px;
+            padding: 15px 0px 15px 25px;
+            margin-left: 28px;
+            // height: 141px;
             color: #fff;
-            background: linear-gradient( rgba(52, 134, 193, 0.7) 100%,rgba(64,159,224,0.3) 0%);
+            background-image: linear-gradient(90deg, rgba(67,176,255,0.80) 0%, rgba(64,159,224,0.00) 100%);
             border-radius: 3px;
-            padding: 3px;
+            // display: -webkit-box;
+            // -webkit-box-orient: vertical;
+            // -webkit-line-clamp: 3;
             overflow: hidden;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 3;
+            .ant-steps-item-title {
+              font-size: 18px;
+              letter-spacing: 0;
+              line-height: 19px;
+              // position: absolute;
+              // left: 25px;
+              // top: 15px;
+            }
+            .ant-steps-item-description {
+              font-size: 16px;
+              color: #FFFFFF;
+              letter-spacing: 0;
+              line-height: 24px;
+              width: 400px;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
+              overflow: hidden;
+              // height: 72px;
+              // position: absolute;
+              // top: 54px;
+              // left: 25px;
+            }
           }
         }
         .ant-steps-item-icon {
@@ -62,7 +114,7 @@
         }
         .ant-steps-item-tail {
           left: 10px;
-          padding: 25px 0 6px
+          padding: 25px 0 6px;
         }
         .ant-steps-item-tail::after {
           background: #409FE0;
@@ -77,7 +129,9 @@
         }
         .ant-steps-item-description {
           font-size: 12px;
-          width: 340px;
+          margin-top: 10px;
+          width: 400px;
+          padding-bottom: 0;
           // height: 60px;
           color: rgba(255,255,255,.6);
         }

@@ -191,7 +191,7 @@ const env = require('../../assets/images/env.png')
               shadowBlur: 20
             }
           },
-          top: '10%',
+          top: '1%',
           data: praseSource(sourceData),
           links: praseLink(linkData),
           lineStyle: {

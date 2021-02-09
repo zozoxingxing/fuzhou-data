@@ -4,13 +4,17 @@
     min-height: 700px;
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 80px;
     align-items: center;
     justify-content: center;
     .top{
       .title{
-        color: #fff;
+        font-family: PingFangSC-Semibold;
         font-size: 28px;
+        color: rgba(255,255,255,0.85);
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 24px;
       }
     }
     .content {
@@ -18,17 +22,15 @@
       flex-direction: column;
       align-items: center;
       flex: 1;
-      // width: 100%;
       max-width: 1066px;
       .swiper-container {
         width: 80%;
         min-width: 800px;
         min-height: 300px;
-        height: 40%;
-        display: flex;
+        // height: 40%;
+        // display: flex;
         .swiper-slide.swiper-slide-active{
-           height: 100%;
-          //height: 346px;
+          height: 100%;
           position: relative;
           background: url(https://honganstatic.cls.cn/assets/web/pro_background.png) no-repeat center ;
           background-size: 100%;
@@ -48,7 +50,7 @@
               position: absolute;
               border-bottom: 1px solid #43B0FF;
               color: #43B0FF;
-              bottom: 0px;
+              bottom: 2px;
               font-size: 15px;
             }
           }
@@ -61,21 +63,18 @@
           align-items: center;
           color: #fff;
           .ava {
-            height: 110px;
-            width: 110px;
+            height: 130px;
+            width: 130px;
             display: flex;
-            // padding: 10px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             img {
-              // position: absolute;
               height: 80px;
             }
             .title {
-              font-size: 14px;
-              // position: absolute;
-              // bottom: -30px;
+              font-size: 16px;
+              color: rgba(255,255,255,0.85);
             }
           }
         }
@@ -97,8 +96,6 @@
         }
       }
       .word-container {
-        width: 80%;
-        margin: 40px 0 0 0;
         flex: 1;
         display: flex;
         flex-wrap: wrap;
@@ -109,23 +106,27 @@
           justify-content: center;
           align-items: center;
           .item {
+            margin-bottom: 40px;
+            position: relative;
             color: #fff;
-            width: 70%;
-            height: 60%;
+            background: url(https://honganstatic.cls.cn/assets/web/bottom-border.png) no-repeat center;
+            background-size: cover;
+            width: 420px;
+            height: 161px;
             .active-title {
-              padding: 5px;
-              height: 30px;
-              background: #43B0FF;
+              position: absolute;
+              top: 15px;
+              left: 20px;
               font-size: 16px;
             }
             .active-content {
-              padding: 3px;
+              position: absolute;
+              top: 69px;
+              left: 20px;
               font-size: 14px;
-              height: 70px;
+              height: 72px;
+              width: 380px;
               color: rgba(255,255,255,0.85);
-              border: 1px solid #aae8f3;
-              border-top: transparent;
-              border-radius: 0 0 20px 0;
               overflow: hidden;
               text-overflow: ellipsis;
               display: -webkit-box;
