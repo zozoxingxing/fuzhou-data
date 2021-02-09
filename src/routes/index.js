@@ -20,7 +20,7 @@ const Index = props => {
                     <Route path="/about" component={About}/>
                     <Route path="/media" component={Login}/>
                     <Route path="/register" component={Regisrer}/>
-                    <Route path="/news" component={NewsItem}/>
+                    <Route path="/news/:title/:id" component={NewsItem}/>
                 </App>
             </BrowserRouter>
         </Provider>
