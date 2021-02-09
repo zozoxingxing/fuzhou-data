@@ -42,10 +42,16 @@
           height: 36px;
         }
         .des {
-          margin: 30px 0 50px 0;
+          margin: 30px 0 10px 0;
           font-size: 16px;
           width: 760px;
           height: 31px;
+        }
+        .des-detail {
+          font-size: 16px;
+          margin-bottom: 50px;
+          word-break: break-all;
+          width: 660px;
         }
         .ant-btn-primary {
           width: 100px;
