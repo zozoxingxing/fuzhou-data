@@ -74,20 +74,12 @@ const News = props => {
         }
     ]
 
-    let calcHeight = 0;
-    if (height >= 937) calcHeight = 195;
-    else if (height >= 851) calcHeight = 155;
-    else if (height >= 749) calcHeight = 103;
-    else if (height >= 624) calcHeight = 190;
-    else if (height >= 535) calcHeight = 100;
-    else if (height >= 469) calcHeight = 35;
-
     return (
         <div className="news-wrap">
             <div className='news-title'>新闻动态</div>
             <div className='news-article-wrap'>
                 {
-                    (height <= 376 ? [] : (splitArray(newsList, height < 537 ? 2 : 3).filter((item, i) => height < 626 ? i === 0 : true))).map((item, i) => {
+                    splitArray(newsList, 3).map((item, i) => {
                         const result = item.map((v, index) => (
                             <div
                                 className='news-article-item' key={index}
@@ -95,7 +87,10 @@ const News = props => {
                                     window.open(`/news/${v.title}/${index}`, '_blank')
                                 }}
                             >
-                                <div className='news-article-item-image-box' style={{height: calcHeight}}>
+                                <div
+                                    className='news-article-item-image-box'
+                                    style={{height: (height - 42 - 70 - 204 - 176 - 40) / 2}}
+                                >
                                     <img
                                         alt='' src={v.url}
                                         className='news-article-item-image'

@@ -65,29 +65,31 @@ const Home = props => {
     const style = {transform: `scale(${scale})`};
 
     return (
-        <div className="page-wrapper">
-            <div
-                className="swiper-container4"
-                style={{height: height}}
-            >
-                <div className="swiper-wrapper">
-                    <div className="swiper-slide">
-                        <div style={{width: '100%'}}><Slide/></div>
-                    </div>
-                    <div className="swiper-slide">
-                        <div style={{width: '100%', ...style}}><Produce/></div>
-                    </div>
-                    <div className="swiper-slide">
-                        <div style={{width: '100%', ...style}}><Recommend/></div>
-                    </div>
-                    <div className="swiper-slide">
-                        <div style={{width: '100%', ...style}}><Plan/></div>
-                    </div>
-                    <div className="swiper-slide">
-                        <div style={{width: '100%', ...style}}><Unit/></div>
-                    </div>
-                    <div className="swiper-slide">
-                        <div style={{width: '100%', height: '100%'}}><News/></div>
+        <div style={{overflow: 'hidden'}}>
+            <div className="page-wrapper">
+                <div
+                    className="swiper-container4"
+                    style={{height: height}}
+                >
+                    <div className="swiper-wrapper">
+                        <div className="swiper-slide">
+                            <div style={{width: '100%'}}><Slide/></div>
+                        </div>
+                        <div className="swiper-slide">
+                            <div style={{width: '100%', ...style}}><Produce/></div>
+                        </div>
+                        <div className="swiper-slide">
+                            <div style={{width: '100%', ...style}}><Recommend/></div>
+                        </div>
+                        <div className="swiper-slide">
+                            <div style={{width: '100%'}}><Plan/></div>
+                        </div>
+                        <div className="swiper-slide">
+                            <div style={{width: '100%', ...style}}><Unit/></div>
+                        </div>
+                        <div className="swiper-slide">
+                            <div style={{width: '100%', height: '100%'}}><News/></div>
+                        </div>
                     </div>
                 </div>
             </div>
