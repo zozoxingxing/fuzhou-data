@@ -92,7 +92,7 @@ const News = props => {
                             <div
                                 className='news-article-item' key={index}
                                 onClick={() => {
-                                    window.open('/news', '_blank')
+                                    window.open(`/news/${v.title}/${index}`, '_blank')
                                 }}
                             >
                                 <div className='news-article-item-image-box' style={{height: calcHeight}}>
