@@ -14,6 +14,7 @@ export default class Plan extends Component {
     }
     componentDidMount() {
         new Swiper('.swiper-plan', {
+            direction : 'horizontal',
             slideToClickedSlide: true,
             grabCursor: true,
             speed: 1000,
