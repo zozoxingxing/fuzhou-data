@@ -14,8 +14,7 @@ class NewsItem extends Component {
       }
       return (
         <div className="news-pager">
-          <div className="news-nav"></div>
-          4
+          <div className="news-nav"/>
           <div className="news-content">
             <div className="content-detail">
               <div className="news-left">
@@ -26,7 +25,7 @@ class NewsItem extends Component {
                   2021-01-15  科技日报
                 </div>
                 <div className="image-wrap">
-                  <div className="news-image" style={background}></div>
+                  <div className="news-image" style={background}/>
                 </div>
                 {
                   <div className="news-cont">
@@ -38,7 +37,7 @@ class NewsItem extends Component {
               </div>
               <div className="news-right">
                 <div className="special">精彩专题</div>
-                <div className="special-image"></div>
+                <div className="special-image"/>
                 <div className="special-title">
                   国有企业数字化转型宣贯会
                 </div>
