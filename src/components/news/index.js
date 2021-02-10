@@ -56,6 +56,7 @@ class News extends Component {
             <NavLink 
               to={`/news/${item.title}/${index}`}
               className="news-item" key={index} 
+              target="_blank"
               onClick={() => handleHeaderShowOrHide && handleHeaderShowOrHide(true)}
             >
               <div className="image-wrapper">
