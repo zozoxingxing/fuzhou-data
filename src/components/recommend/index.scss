@@ -27,7 +27,7 @@
     }
   }
   .content-wrap{
-    width: 1200px;
+    width: 80%;
     margin:0 auto;
     display:flex;
 
@@ -37,6 +37,7 @@
         position:relative;
         padding-left:40px;
         cursor:pointer;
+        min-width:500px;
       }
       .content-right-item-wrap:before {
         content: "\20";
@@ -88,7 +89,12 @@
         border-bottom: 3px solid transparent;
       }
       .content-right-item-title{font-size:12px;line-height: 19px;color:rgba(255,255,255,0.60);}
-      .content-right-item-desc{margin-top:10px;font-size:12px;line-height:24px;color:rgba(255,255,255,0.60);}
+      .content-right-item-desc{
+        margin-top:10px;font-size:12px;line-height:24px;color:rgba(255,255,255,0.60);
+        text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical;box-orient:vertical;
+        -webkit-line-clamp:2;line-clamp:2;
+        overflow:hidden;
+      }
     }
   }
 }

@@ -43,6 +43,15 @@ const Home = props => {
         })
     }, [height])
 
+    let scale = 1;
+    if (height >= 749) scale = 1
+    else if (height >= 624) scale = 0.8
+    else if (height >= 535) scale = 0.7
+    else if (height >= 468) scale = 0.6
+    else if (height >= 374) scale = 0.5
+
+    const style = {transform: `scale(${scale})`};
+
     return (
         <div className="page-wrapper">
             <div
@@ -54,19 +63,19 @@ const Home = props => {
                         <div style={{width: '100%'}}><Slide/></div>
                     </div>
                     <div className="swiper-slide">
-                        <div style={{width: '100%'}}><Produce/></div>
+                        <div style={{width: '100%', ...style}}><Produce/></div>
                     </div>
                     <div className="swiper-slide">
-                        <div style={{width: '100%'}}><Recommend/></div>
+                        <div style={{width: '100%', ...style}}><Recommend/></div>
                     </div>
                     <div className="swiper-slide">
-                        <div style={{width: '100%'}}><Plan/></div>
+                        <div style={{width: '100%', ...style}}><Plan/></div>
                     </div>
                     <div className="swiper-slide">
-                        <div style={{width: '100%'}}><Unit/></div>
+                        <div style={{width: '100%', ...style}}><Unit/></div>
                     </div>
                     <div className="swiper-slide">
-                        <div style={{width: '100%'}}><News/></div>
+                        <div style={{width: '100%', height: '100%'}}><News/></div>
                     </div>
                 </div>
             </div>
