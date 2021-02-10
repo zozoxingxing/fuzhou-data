@@ -25,25 +25,25 @@ export default class Plan extends Component {
             centeredSlides: true, // active slide 居中设置（默认居左）
             loop: true, // 循环
             parallax: true,
-            on: {
-                setTranslate: function () {
-                    const slides = this.slides
-                    for (let i = 0; i < slides.length; i++) {
-                        let slide = slides.eq(i)
-                        let progress = slides[i].progress
-                        //slide.html(progress.toFixed(2)); 看清楚progress是怎么变化的
-                        slide.css({'opacity': '', 'background': ''});
-                        slide.transform('');//清除样式
-                        slide.transform('scale('+(1 - Math.abs(progress)/8)+')');
-                    }
-                },
-                setTransition: function (transition) {
-                    for (let i = 0; i < this.slides.length; i++) {
-                        let slide = this.slides.eq(i)
-                        slide.transition(transition);
-                    }
-                },
-            },
+            // on: {
+            //     setTranslate: function () {
+            //         const slides = this.slides
+            //         for (let i = 0; i < slides.length; i++) {
+            //             let slide = slides.eq(i)
+            //             let progress = slides[i].progress
+            //             //slide.html(progress.toFixed(2)); 看清楚progress是怎么变化的
+            //             slide.css({'opacity': '', 'background': ''});
+            //             slide.transform('');//清除样式
+            //             slide.transform('scale('+(1 - Math.abs(progress)/8)+')');
+            //         }
+            //     },
+            //     setTransition: function (transition) {
+            //         for (let i = 0; i < this.slides.length; i++) {
+            //             let slide = this.slides.eq(i)
+            //             slide.transition(transition);
+            //         }
+            //     },
+            // },
         })
     }
     render() {
