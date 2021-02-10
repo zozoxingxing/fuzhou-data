@@ -14,9 +14,8 @@ export default class Plan extends Component {
     }
     componentDidMount() {
         new Swiper('.swiper-plan', {
-            direction : 'horizontal',
             slideToClickedSlide: true,
-            grabCursor: true,
+            grabCursor : true,
             speed: 1000,
             spaceBetween: 40,
             initialSlide: 0,
@@ -24,26 +23,7 @@ export default class Plan extends Component {
             slidesPerView: 5, //显示三个，宽度平分
             centeredSlides: true, // active slide 居中设置（默认居左）
             loop: true, // 循环
-            parallax: true,
-            // on: {
-            //     setTranslate: function () {
-            //         const slides = this.slides
-            //         for (let i = 0; i < slides.length; i++) {
-            //             let slide = slides.eq(i)
-            //             let progress = slides[i].progress
-            //             //slide.html(progress.toFixed(2)); 看清楚progress是怎么变化的
-            //             slide.css({'opacity': '', 'background': ''});
-            //             slide.transform('');//清除样式
-            //             slide.transform('scale('+(1 - Math.abs(progress)/8)+')');
-            //         }
-            //     },
-            //     setTransition: function (transition) {
-            //         for (let i = 0; i < this.slides.length; i++) {
-            //             let slide = this.slides.eq(i)
-            //             slide.transition(transition);
-            //         }
-            //     },
-            // },
+            parallax : true,
         })
     }
     render() {
