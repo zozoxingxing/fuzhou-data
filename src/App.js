@@ -5,7 +5,7 @@ import Header from './components/header'
 const App = props => {
     const {headerShow, children} = props;
     return (
-        <div style={{width: '100%', overflow: 'hidden'}}>
+        <div>
             {headerShow ? <Header/> : ''}
             {children}
         </div>

@@ -114,7 +114,7 @@ const News = props => {
                     })
                 }
             </div>
-            <div style={{marginTop: height <= 376 ? 110 : 32}}>
+            <div className='news-footer-wrap'>
                 <Footer/>
             </div>
         </div>
