@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useCallback} from 'react'
 import {connect} from 'react-redux';
-import axios from 'axios';
+// import axios from 'axios';
 import './index.scss'
 import Swiper from 'swiper/js/swiper.js';
 import "swiper/css/swiper.min.css"
