@@ -75,11 +75,12 @@ const News = props => {
     ]
 
     let calcHeight = 0;
-    if (height >= 937) calcHeight = 180;
-    else if (height >= 851) calcHeight = 140;
-    else if (height >= 749) calcHeight = 88;
-    else if (height >= 624) calcHeight = 155;
-    else if (height >= 535) calcHeight = 68;
+    if (height >= 937) calcHeight = 195;
+    else if (height >= 851) calcHeight = 155;
+    else if (height >= 749) calcHeight = 103;
+    else if (height >= 624) calcHeight = 190;
+    else if (height >= 535) calcHeight = 100;
+    else if (height >= 469) calcHeight = 35;
 
     return (
         <div className="news-wrap">
@@ -113,7 +114,7 @@ const News = props => {
                     })
                 }
             </div>
-            <div style={{marginTop: height <= 376 ? 77 : 32}}>
+            <div style={{marginTop: height <= 376 ? 110 : 32}}>
                 <Footer/>
             </div>
         </div>

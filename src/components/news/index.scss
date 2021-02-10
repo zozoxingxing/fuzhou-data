@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .news-wrap {
   .t-o-e {
     text-overflow: ellipsis;
@@ -24,21 +23,6 @@
     width: 90%;
     margin: 0 auto;
     .news-article-box {
-=======
-.news-warpper {
-  height: 100vh;
-  display: flex;
-  min-height: 700px;
-  flex-direction: column;
-  .news {
-    margin: 80px 0 50px 0;
-    flex: 1;
-    .news-top {
-      width: 80%;
-      height: 100%;
-      margin: 0 auto;
-      color: #fff;
->>>>>>> 50c13b8427d96f31478c6fd1a963bf261de52491
       display: flex;
       margin-bottom: 20px;
       .news-article-item {
@@ -53,7 +37,6 @@
             height: 100%;
             object-fit: cover;
           }
-<<<<<<< HEAD
           .news-article-item-date {
             position: absolute;
             right: 10px;
@@ -79,58 +62,6 @@
             line-height: 22px;
             margin-top: 10px;
             overflow: hidden;
-=======
-          .image-wrapper {
-            flex: 1;
-            z-index: 999;
-            position: relative;
-            .image {
-              height: 100%;
-              // height: 240px;
-            }
-            .time {
-              color: #fff;
-              position: absolute;
-              bottom: 0px;
-              width: 100%;
-              display: flex;
-              padding: 3px ;
-              justify-content: flex-end;
-              background-image: linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,0.3));
-            }
-          }
-          .news-detail {
-            display: flex;
-            flex-direction: column;
-            padding: 0px 5px;
-            height: 80px;
-            // color: #000;
-            background: #fff;
-            position: relative;
-            .news-title {
-              position: absolute;
-              top: 10px;
-              left: 18px;
-              color: #333333;
-              font-size: 14px;
-            }
-            .news-content {
-              position: absolute;
-              top: 34px;
-              left: 18px;
-              height: 22px;
-              overflow: hidden;
-             text-overflow:ellipsis;
-              font-family: MicrosoftYaHei;
-              font-size: 12px;
-              color: #666666;
-              line-height: 22px;
-              display: -webkit-box;
-              -webkit-box-orient: vertical;
-              -webkit-line-clamp: 1;
-              overflow: hidden;
-            }
->>>>>>> 50c13b8427d96f31478c6fd1a963bf261de52491
           }
         }
 
@@ -138,13 +69,6 @@
       .news-article-item:last-child{margin-right: 0;}
       .news-article-item:hover{transform: scale(1.05)}
     }
-<<<<<<< HEAD
     .news-article-box:last-child{margin-bottom:0;}
-=======
-  }
-  .footer {
-    width: 100%;
-    // height: 240px;
->>>>>>> 50c13b8427d96f31478c6fd1a963bf261de52491
   }
 }
