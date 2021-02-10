@@ -20,13 +20,13 @@ class News extends Component {
           url: 'https://honganstatic.cls.cn/assets/web/news2.png',
           time: '2021-1-22',
           title: '中国电子科技创新大会在京召',
-          content: '科技引领未来 创新驱动发展'
+          content: '12月12日，中国电子科技创新大会在北京召开。大会以“科技引领未来 创新驱动发展”为主题'
 
         },{
           url: 'https://honganstatic.cls.cn/assets/web/news3.png',
           time: '2021-1-22',
-          title: 'PP助手开启移动应用分发新战略——“数据+”',
-          content: '该战略核心是大数据生态系统，涵盖了具有深度挖掘和收集大数据能力的优质移动场。'
+          title: '移动应用分发新战略——“数据+”',
+          content: '阿里巴巴移动事业群PP助手总经理张博认为，伴随着移动互联网用户的需求进一步细分'
         },
         {
           url: 'https://honganstatic.cls.cn/assets/web/news4.png',
@@ -37,12 +37,12 @@ class News extends Component {
         },{
           url: 'https://honganstatic.cls.cn/assets/web/news5.png',
           time: '2021-1-22',
-          title: '突破科技 超越梦想',
-          content: '要推动经济高质量发展。强化全球资源配置功能，积极配置全球资金、信息、技术、人才、货物等要素资源，'
+          title: '突破科技，超越梦想',
+          content: '目前人类对地球进行着过快的开发，占用着大量的地球资源。人口不断增加的同时，我们对能源也有着不断增加的需求'
         },{
           url: 'https://honganstatic.cls.cn/assets/web/news6.png',
           time: '2021-1-22',
-          title: '赢响——腾讯区域营销解决方案战略发布会暨招商会',
+          title: '赢响',
           content: '2017年10月12日，“赢响——腾讯区域营销解决方案战略发布会暨招商会”在重庆隆重举行，'
 
         }
