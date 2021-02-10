@@ -1,0 +1,1 @@
+export const NEWS_DATA= 'news/NEWS_DATA';
