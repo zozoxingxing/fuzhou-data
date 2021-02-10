@@ -15,6 +15,7 @@ class NewsItem extends Component {
       return (
         <div className="news-pager">
           <div className="news-nav"></div>
+          4
           <div className="news-content">
             <div className="content-detail">
               <div className="news-left">
