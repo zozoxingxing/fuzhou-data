@@ -1,3 +1,30 @@
+<<<<<<< HEAD
+.news-wrap {
+  .t-o-e {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    box-orient: vertical
+  }
+
+  .l-c-1 {
+    -webkit-line-clamp: 1;
+    line-clamp: 1
+  }
+
+  .news-title {
+    font-family: PingFangSC-Semibold;
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 0;
+    text-align: center;
+    margin: 20px 0 50px 0;
+  }
+  .news-article-wrap {
+    width: 90%;
+    margin: 0 auto;
+    .news-article-box {
+=======
 .news-warpper {
   height: 100vh;
   display: flex;
@@ -11,33 +38,48 @@
       height: 100%;
       margin: 0 auto;
       color: #fff;
+>>>>>>> 50c13b8427d96f31478c6fd1a963bf261de52491
       display: flex;
-      flex-direction: column;
-      .main-title {
-        display: flex;
-        justify-content: center;
-        color: rgba(255,255,255,0.85);
-        font-size: 28px;
-        letter-spacing: 0;
-        text-align: center;
-        line-height: 24px;
-      }
-      .main-content {
-        margin-top: 20px;
-        flex: 1;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 5px 0 5px 5px;
-        .news-item {
-          width: 31.5%;
-          height: 49%;
-          margin: 0 0px 20px 0px;
-          display: flex;
-          flex-direction: column;
-          &:hover {
-            border: 1px solid #43B0FF;
+      margin-bottom: 20px;
+      .news-article-item {
+        width: 400px;
+        overflow: hidden;
+        margin-right: 20px;
+        cursor: pointer;
+        .news-article-item-image-box {
+          position: relative;
+          .news-article-item-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
+<<<<<<< HEAD
+          .news-article-item-date {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            font-family: MicrosoftYaHei;
+            font-size: 12px;
+            color: #FFFFFF;
+            text-align: right;
+          }
+        }
+        .news-article-item-content-box {
+          padding: 15px 19px 20px 19px;
+          background-color: #fff;
+          .news-article-item-content-title {
+            font-family: MicrosoftYaHei;
+            font-size: 14px;
+            color: #333333;
+          }
+          .news-article-item-content-desc {
+            font-family: MicrosoftYaHei;
+            font-size: 12px;
+            color: #666666;
+            line-height: 22px;
+            margin-top: 10px;
+            overflow: hidden;
+=======
           .image-wrapper {
             flex: 1;
             z-index: 999;
@@ -88,13 +130,21 @@
               -webkit-line-clamp: 1;
               overflow: hidden;
             }
+>>>>>>> 50c13b8427d96f31478c6fd1a963bf261de52491
           }
         }
+
       }
+      .news-article-item:last-child{margin-right: 0;}
+      .news-article-item:hover{transform: scale(1.05)}
     }
+<<<<<<< HEAD
+    .news-article-box:last-child{margin-bottom:0;}
+=======
   }
   .footer {
     width: 100%;
     // height: 240px;
+>>>>>>> 50c13b8427d96f31478c6fd1a963bf261de52491
   }
 }
