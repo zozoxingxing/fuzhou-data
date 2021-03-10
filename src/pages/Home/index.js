@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useCallback} from 'react'
 import {connect} from 'react-redux';
-// import axios from 'axios';
+import axios from 'axios';
 import './index.scss'
 import Swiper from 'swiper/js/swiper.js';
 import "swiper/css/swiper.min.css"
@@ -18,16 +18,16 @@ const Home = props => {
     const [height, setHeight] = useState(0);
     // const [scrollTop, setScrollTop] = useState(0);
 
-    // useEffect(()=>{
-    //   axios({
-    //     method: 'post',
-    //     url: '/user/auth',
-    //     data: {
-    //       "password": "123",
-    //       "phoneNumber": "18621666570"
-    //     }
-    //   })
-    // },[])
+    useEffect(()=>{
+      axios({
+        method: 'post',
+        url: '/user/auth',
+        data: {
+          "password": "123",
+          "phoneNumber": "18621666570"
+        }
+      })
+    },[])
 
     const onResize = useCallback(() => {
         setHeight(document.body.clientHeight)
