@@ -191,7 +191,7 @@ const Recommend = prop => {
                     shadowBlur: 20
                 }
             },
-            top: '1%',
+            // top: '1%',
             data: praseSource(sourceData),
             links: praseLink(linkData),
             lineStyle: {
