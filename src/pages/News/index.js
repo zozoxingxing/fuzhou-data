@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Footer from '../../components/footer'
 import {connect} from 'react-redux';
 import './index.scss'
 
@@ -47,9 +46,6 @@ class NewsItem extends Component {
               </div>
             </div>
           </div>
-          {/* <div className="news-footer">
-            <Footer />
-          </div> */}
         </div>
       )
     }

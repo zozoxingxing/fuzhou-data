@@ -28,30 +28,27 @@ const Recommend = prop => {
         }
     }, [current])
 
-    const onChange = (current) => {
-        setCurrent(current)
-    }
     const praseSource = (val) => {
         for (var i = 0; i < val.length; i++) {
             if (val[i].category === 6) {
-                val[i] = {
-                    name: val[i].name,
-                    color: '#215D94 ',
-                    symbolSize: 6 + 4 * i,
-                    draggable: true,
-                }
+              val[i] = {
+                name: val[i].name,
+                color: '#215D94',
+                symbolSize: 6 + 4 * i,
+                draggable: true,
+              }
             } else {
                 val[i] = {
-                    name: val[i].name,
-                    symbolSize: 65, // 控制每个圆的大小
-                    draggable: true, // 控制是否可拖动
-                    category: val[i].category, // 对应工具显示隐藏
-                    itemStyle: {
-                        borderColor: '#fff',
-                        borderWidth: 4,
-                        shadowBlur: 10,
-                        shadowColor: 'rgba(98, 198, 248, 0.5)', //圆边框阴影的颜色
-                    }
+                  name: val[i].name,
+                  symbolSize: 65, // 控制每个圆的大小
+                  draggable: true, // 控制是否可拖动
+                  category: val[i].category, // 对应工具显示隐藏
+                  itemStyle: {
+                    borderColor: '#fff',
+                    borderWidth: 4,
+                    shadowBlur: 10,
+                    shadowColor: 'rgba(98, 198, 248, 0.5)', //圆边框阴影的颜色
+                  }
                 }
             }
         }
@@ -173,25 +170,24 @@ const Recommend = prop => {
             type: 'graph',
             layout: 'force',
             force: {
-                repulsion: 500,
-                edgeLength: 100
+              repulsion: 500,
+              edgeLength: 100
             },
             label: {
-                normal: {
-                    show: true,
-                    color: 'rgba(0,0,0,0)'
-                }
+              normal: {
+                show: true,
+                color: 'rgba(0,0,0,0)'
+              }
             },
             zoom: 0.9,
             emphasis: {
-                focus: 'self',
-                scale: true,
-                itemStyle: {
-                    shadowColor: '#162d5e',
-                    shadowBlur: 20
-                }
+              focus: 'self',
+              scale: true,
+              itemStyle: {
+                shadowColor: '#162d5e',
+                shadowBlur: 20
+              }
             },
-            // top: '1%',
             data: praseSource(sourceData),
             links: praseLink(linkData),
             lineStyle: {

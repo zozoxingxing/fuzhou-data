@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Footer from '../../components/footer'
 import { Tabs } from 'antd'
 import './index.scss'
 const { TabPane } = Tabs;
@@ -42,9 +41,6 @@ export default class About extends Component {
                   {navItem}
                 </Tabs>
               </div>
-              {/* <div className="footer">
-                <Footer/>
-              </div> */}
             </div>
         )
     }
