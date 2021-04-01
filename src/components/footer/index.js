@@ -11,7 +11,7 @@ export default class footer extends Component {
               <Tips />
               <div className="footer-top">
                 <div className="top-left">
-                  <div className="footer-logo"></div>
+                  {/* <div className="footer-logo"></div> */}
                   <div className="footer-tele">
                     <div>咨询热线</div>
                     <div className="tele-num">123-123-1234</div>
@@ -51,8 +51,8 @@ export default class footer extends Component {
               <div className="footer-bottom">
                 <div className="content">
                   <div className="left-content">
-                    <span>@2021 福州数据资产运营公司</span>
-                    <span>xxxxxxxxxx</span>
+                    {/* <span>@2021 福州数据资产运营公司</span> */}
+                    <span>数据流通中心</span>
                   </div>
                   <div className="right-content">
                     <span>设为主页</span>|
