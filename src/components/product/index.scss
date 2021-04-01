@@ -32,7 +32,7 @@
         .swiper-slide.swiper-slide-active{
           height: 100%;
           position: relative;
-          background: url(https://honganstatic.cls.cn/assets/web/pro_background.png) no-repeat center ;
+          background: url(./images/pro_background.png) no-repeat center ;
           background-size: 100%;
           .ava {
             position: relative;
@@ -80,7 +80,7 @@
         }
         .swiper-button-prev {
           left: 31%;
-          background: url(https://honganstatic.cls.cn/assets/web/left.png) no-repeat center;
+          background: url(./images/left.png) no-repeat center;
           background-size: contain;
         }
         .swiper-button-prev::after {
@@ -88,7 +88,7 @@
         }
         .swiper-button-next {
           right: 31%;
-          background: url(https://honganstatic.cls.cn/assets/web/right.png) no-repeat center;
+          background: url(./images/right.png) no-repeat center;
           background-size: contain;
         }
         .swiper-button-next::after {
@@ -109,7 +109,7 @@
             margin-bottom: 40px;
             position: relative;
             color: #fff;
-            background: url(https://honganstatic.cls.cn/assets/web/bottom-border.png) no-repeat center;
+            background: url(./images/bottom-border.png) no-repeat center;
             background-size: cover;
             width: 420px;
             height: 161px;
