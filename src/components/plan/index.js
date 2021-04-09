@@ -72,9 +72,6 @@ export default class Plan extends Component {
           <div className="plan-wrapper">
             <div className="top">
               <div className="title">解决方案</div>
-              <div className="more">
-                查看更多<Icon type="right"/>
-              </div>
             </div>
             <div className="content">
               <div className="content-wrap">

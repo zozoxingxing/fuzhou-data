@@ -235,32 +235,29 @@ const Recommend = prop => {
     ]
     return (
         <div className="recommendWrapper">
-            <div className="top">
-                <div className="title">热门推荐</div>
-                <div className="more">
-                    查看更多<Icon type="right"/>
-                </div>
-            </div>
-            <div className="content-wrap">
-                <div id="logo" style={{minWidth: '55%', height: '100%'}}/>
-                <div className='content-step-box'>
-                    {
-                        recommentContent.map((item, i) => (
-                            <div
-                                key={i} onClick={() => setCurrent(i)}
-                                className={`content-right-item-wrap ${current === i ? 'content-right-item-select-wrap' : ''}`}
-                            >
-                                <div style={i === (recommentContent.length - 1) ? {} : {paddingBottom: 20}}>
-                                    <div className={current === i ? 'content-right-item-selected-box' : ''}>
-                                        <div className='content-right-item-title'>{item.title}</div>
-                                        <div className='content-right-item-desc'>{item.description}</div>
-                                    </div>
-                                </div>
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>
+          <div className="top">
+            <div className="title">热门推荐</div>
+          </div>
+          <div className="content-wrap">
+              <div id="logo" style={{minWidth: '55%', height: '100%'}}/>
+              <div className='content-step-box'>
+                  {
+                      recommentContent.map((item, i) => (
+                          <div
+                              key={i} onClick={() => setCurrent(i)}
+                              className={`content-right-item-wrap ${current === i ? 'content-right-item-select-wrap' : ''}`}
+                          >
+                              <div style={i === (recommentContent.length - 1) ? {} : {paddingBottom: 20}}>
+                                  <div className={current === i ? 'content-right-item-selected-box' : ''}>
+                                      <div className='content-right-item-title'>{item.title}</div>
+                                      <div className='content-right-item-desc'>{item.description}</div>
+                                  </div>
+                              </div>
+                          </div>
+                      ))
+                  }
+              </div>
+          </div>
         </div>
     )
 

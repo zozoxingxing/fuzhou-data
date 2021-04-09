@@ -44,9 +44,6 @@ export default class Unit extends Component {
           <div className="unit-wrap" >
             <div className="top">
               <div className="title">炫酷大屏</div>
-              <div className="more">
-                查看更多<Icon type="right" />
-              </div>
             </div>
             <div className="content">
               <div className="content-left">
