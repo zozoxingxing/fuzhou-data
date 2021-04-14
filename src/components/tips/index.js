@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Icon, BackTop } from 'antd'
+import { Icon } from 'antd'
 import './index.scss'
 
 export default class tips extends Component {
@@ -16,28 +16,28 @@ export default class tips extends Component {
           ],
           showTips: 'wrap-tips'
         }
-        // this.scrollTop = this.scrollTop.bind(this)
+        this.scrollTop = this.scrollTop.bind(this)
     }
-    // componentDidMount() {
-    //     window.addEventListener('scroll', this.scrollTop)
-    // }
-    // componentWillMount() {
-    //     window.removeEventListener('scroll', this.scrollTop)
-    // }
-    // scrollTop(event) {
-    //     const scrollTop = (event.srcElement ? event.srcElement.documentElement.scrollTop : 0)
-    //         || window.pageYOffset
-    //         || (event.srcElement ? event.srcElement.body.scrollTop : 0);
-    //     if (scrollTop > 240) {
-    //         this.setState({
-    //             showTips: 'wrap-tips showTips'
-    //         })
-    //     } else {
-    //         this.setState({
-    //             showTips: 'wrap-tips'
-    //         })
-    //     }
-    // }
+    componentDidMount() {
+        window.addEventListener('scroll', this.scrollTop)
+    }
+    componentWillMount() {
+        window.removeEventListener('scroll', this.scrollTop)
+    }
+    scrollTop(event) {
+        const scrollTop = (event.srcElement ? event.srcElement.documentElement.scrollTop : 0)
+            || window.pageYOffset
+            || (event.srcElement ? event.srcElement.body.scrollTop : 0);
+        if (scrollTop > 240) {
+            this.setState({
+                showTips: 'wrap-tips showTips'
+            })
+        } else {
+            this.setState({
+                showTips: 'wrap-tips'
+            })
+        }
+    }
     handleClick() {
       window.scrollTo({
         top: 0,

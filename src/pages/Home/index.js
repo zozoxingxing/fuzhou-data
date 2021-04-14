@@ -54,7 +54,7 @@ const Home = props => {
         <div style={{overflow: 'hidden'}}>
             <div className="page-wrapper">
                 <div
-                    className="swiper-container4"
+                    className="swiper-container4 swiper-no-swiping"
                     style={{height: height}}
                 >
                     <div className="swiper-wrapper">

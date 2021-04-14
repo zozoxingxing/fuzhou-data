@@ -1,20 +1,22 @@
 .about-wrapper {
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  min-width: 1000px;
+  // overflow: hidden;
   .nav {
     height: 76px;
   }
   .about-banner{
-    flex: 1;
-    background: url(https://honganstatic.cls.cn/assets/web/about-banner.png) no-repeat bottom center;
+    // flex: 1;
+    height: 300px;
+    background: url(https://honganstatic.cls.cn/assets/web/about-banner.png) no-repeat 0 0;
     background-size: cover ;
   }
   .about-content {
     display: flex;
     flex: 2;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     padding: 15px 0 30px;
     .about-title {
@@ -26,6 +28,26 @@
       font-size: 14px;
       color: #333333;
       line-height: 30px;
+      text-indent: 2em;
+      text-align: justify;
+    }
+    .summary {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .summary-image {
+        width: 550px;
+      }
+      .summary-title {
+        margin-top: 6px;
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+    .ant-tabs-nav-wrap {
+      min-height: 634px;
     }
     .ant-tabs .ant-tabs-left-bar {
       background: #F6F6F6 ;

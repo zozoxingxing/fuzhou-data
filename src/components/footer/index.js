@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Tips from '../../components/tips'
+import { Link } from 'react-router-dom';
 
 import './index.scss'
 
@@ -11,7 +12,11 @@ export default class footer extends Component {
               <Tips />
               <div className="footer-top">
                 <div className="top-left">
-                  <div className="footer-logo"></div>
+                  <div className="footer-logo" />
+                  <div className="footer-tele">
+                    <p>咨询热线</p>
+                    <p className="tele-num">0519-28551333</p>
+                  </div>
                 </div>
                 <div className="top-right">
                   <div className="right-title">
@@ -32,7 +37,7 @@ export default class footer extends Component {
                       <span>物流 政务</span>
                     </div>
                     <div className="content-us">
-                      <span>公司简介</span>
+                      <span><a href="/about" style={{color:'rgba(255,255,255,0.7)'}}>公司概况</a></span>
                       <span>新闻中心</span>
                       <span>最新政策</span>
                     </div>
@@ -47,7 +52,7 @@ export default class footer extends Component {
               <div className="footer-bottom">
                 <div className="content">
                   <div className="left-content">
-                    <span>@2021 福州数据资产运营公司</span>
+                    <span>@2021 福州市数据资产运营有限公司</span>
                   </div>
                   <div className="right-content">
                     <span>设为主页</span>
