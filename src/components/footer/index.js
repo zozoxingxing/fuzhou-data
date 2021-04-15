@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Tips from '../../components/tips'
 import { Link } from 'react-router-dom';
 
 import './index.scss'
@@ -9,7 +8,6 @@ export default class footer extends Component {
     render() {
         return (
             <div className="footer-wrap">
-              <Tips />
               <div className="footer-top">
                 <div className="top-left">
                   <div className="footer-logo" />

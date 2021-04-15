@@ -3,7 +3,8 @@ import {connect} from 'react-redux';
 import './index.scss'
 import Swiper from 'swiper/js/swiper.js';
 import "swiper/css/swiper.min.css"
-import {actionCreators} from '../../components/header/store';
+import {actionCreators as headerActionCreators} from '../../components/header/store';
+import { actionCreators } from './store';
 
 import Produce from '../../components/product'
 import Recommend from '../../components/recommend'
@@ -13,7 +14,7 @@ import News from '../../components/news'
 import Slide from '../../components/slide'
 
 const Home = props => {
-    const {handleHeaderShowOrHide} = props;
+    const {handleHeaderShowOrHide, handleSwiperIndex, handleSwiperComponent} = props;
     const [height, setHeight] = useState(0);
     const onResize = useCallback(() => {
         setHeight(document.body.clientHeight)
@@ -29,16 +30,18 @@ const Home = props => {
     }, [height])
 
     useEffect(() => {
-        new Swiper('.swiper-container4', {
+        const swiper = new Swiper('.swiper-container4', {
             direction: 'vertical',
             slidesPerView: 1,
             mousewheel: true,
             on: {
                 slideChange: function () {
-                    handleHeaderShowOrHide && handleHeaderShowOrHide(!this.activeIndex)
+                  handleSwiperIndex && handleSwiperIndex(this.activeIndex);
+                  handleHeaderShowOrHide && handleHeaderShowOrHide(!this.activeIndex)
                 },
             }
         })
+        handleSwiperComponent && handleSwiperComponent(swiper);
     }, [height])
 
     let scale = 1;
@@ -90,7 +93,13 @@ const mapState = (state) => ({
 const mapDispatch = (dispatch) => {
     return {
         handleHeaderShowOrHide(value) {
-            dispatch(actionCreators.handleHeaderShowOrHide(value));
+            dispatch(headerActionCreators.handleHeaderShowOrHide(value));
+        },
+        handleSwiperIndex(value) {
+          dispatch(actionCreators.handleSwiperChange(value));
+        },
+        handleSwiperComponent(value) {
+          dispatch(actionCreators.handleSwiperComponent(value));
         }
     }
 }
