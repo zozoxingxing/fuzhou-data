@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './index.scss';
-import { withRouter } from 'react-router';
+import { withRouter } from 'react-router-dom';
 
 class nav extends Component {
    

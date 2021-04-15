@@ -13,16 +13,16 @@ import NewsItem from '../pages/News'
 const Index = props => {
     return (
         <Provider store={store}>
-            <BrowserRouter>
-                <App>
-                    <Route path="/" exact render={() => (<Redirect to="/home"/>)}/>
-                    <Route path="/home" component={Home}/>
-                    <Route path="/about" component={About}/>
-                    <Route path="/media" component={Login}/>
-                    <Route path="/register" component={Regisrer}/>
-                    <Route path="/news/:title/:id" component={NewsItem}/>
-                </App>
-            </BrowserRouter>
+          <BrowserRouter>
+            <App>
+              <Route path="/" exact render={() => (<Redirect to="/home"/>)}/>
+              <Route path="/home" component={Home}/>
+              <Route path="/about" component={About}/>
+              <Route path="/media" component={Login}/>
+              <Route path="/register" component={Regisrer}/>
+              <Route path="/news/:title/:id" component={NewsItem}/>
+            </App>
+          </BrowserRouter>
         </Provider>
     )
 }
